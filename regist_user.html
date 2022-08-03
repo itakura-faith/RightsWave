@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新規登録 - ユーザー情報の登録｜Rightswave</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="area-all area-login">
+
+<div class="prt-signstep">
+  <div class="prt-signstep__item prt-signstep__item--current"><span>ユーザー登録</span></div>
+  <div class="prt-signstep__item"><span>アーティスト登録</span></div>
+  <div class="prt-signstep__item"><span>楽曲登録</span></div>
+  <div class="prt-signstep__item"><span>著作者登録</span></div>
+</div><!-- .prt-signstep -->
+
+<div class="area-contentbox">
+  <h2 class="area-contentbox__h">ユーザー登録</h2>
+  <p class="area-contentbox__caption">
+    Rightswaveのユーザーアカウントを登録します。<br>
+    ここでの情報は公開されません。
+  </p>
+
+  <div class="area-contentbox__content">
+    <ul class="prt-signlist">
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">ユーザ名</div>
+        <div class="prt-signlist__td"><input type="text" placeholder="user01"></div>
+      </li>
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">メールアドレス</div>
+        <div class="prt-signlist__td"><input type="email" placeholder="example@example.com"></div>
+      </li>
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">パスワード</div>
+        <div class="prt-signlist__td"><input type="password"></div>
+      </li>
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">2段階認証の方式</div>
+        <div class="prt-signlist__td">
+          <ul class="prt-checkboxlist">
+            <li class="prt-checkboxlist__item"><input type="checkbox" id="nidankai01"><label for="nidankai01">SMS認証</label></li>
+            <li class="prt-checkboxlist__item"><input type="checkbox" id="nidankai02"><label for="nidankai02">テスト項目</label></li>
+          </ul><!-- .prt-checkboxlist -->
+        </div>
+      </li>
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">本名（実名）</div>
+        <div class="prt-signlist__td"><input type="text" placeholder="山田太郎"></div>
+      </li>
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">本名（カナ）</div>
+        <div class="prt-signlist__td"><input type="text" placeholder="ヤマダタロウ"></div>
+      </li>
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">本名（英文字表記）</div>
+        <div class="prt-signlist__td"><input type="text" placeholder="YAMADATARO"></div>
+      </li>
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">国</div>
+        <div class="prt-signlist__td">
+          <label for="signlist-country" class="prt-signlist__pd">
+            <select name="" id="signlist-country">
+              <option value="japan">日本</option>
+              <option value="sample01">国01</option>
+              <option value="sample02">国02</option>
+              <option value="sample03">国03</option>
+            </select>
+          </label>
+        </div>
+      </li>
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">郵便番号</div>
+        <div class="prt-signlist__td"><input type="text" name="postal-code" autocomplete="postal-code" placeholder="1234567"></div>
+      </li>
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">都道府県</div>
+        <div class="prt-signlist__td">
+          <label for="signlist-city" class="prt-signlist__pd">
+            <select name="" id="signlist-city">
+              <option value="japan">東京</option>
+              <option value="sample01">都道府県01</option>
+              <option value="sample02">都道府県02</option>
+              <option value="sample03">都道府県03</option>
+            </select>
+          </label>
+        </div>
+      </li>
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">住所</div>
+        <div class="prt-signlist__td"><input type="text"></div>
+      </li>
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">電話番号</div>
+        <div class="prt-signlist__td"><input type="tel" placeholder="080XXXXXXXX"></div>
+      </li>
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">プラン</div>
+        <div class="prt-signlist__td">
+          <div class="prt-userplan">
+            <input type="radio" id="userplan01" name="userplan" checked>
+            <label for="userplan01" class="prt-userplan__item">
+              <div class="prt-userplan__img"><img src="./images/topplanlist03.svg" alt=""></div>
+              <div class="prt-userplan__content">
+                <div class="prt-userplan__h">作品ごとに設定</div>
+                <p class="prt-userplan__text">
+                  作品ごとに、還元率や登録費が異なるプランを設定することができます。
+                </p>
+              </div>
+            </label>
+            <input type="radio" id="userplan02" name="userplan">
+            <label for="userplan02" class="prt-userplan__item">
+              <div class="prt-userplan__img"><img src="./images/topplanlist04.svg" alt=""></div>
+              <div class="prt-userplan__content">
+                <div class="prt-userplan__h">無制限</div>
+                <p class="prt-userplan__text">
+                  年間3900円で作品が登録し放題です。
+                </p>
+              </div>
+            </label>
+          </div><!-- .prt-userplan -->
+        </div>
+      </li>
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">GMO・PayPal ID</div>
+        <div class="prt-signlist__td"><input type="text" placeholder=""></div>
+      </li>
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">スプリット支払い有無</div>
+        <div class="prt-signlist__td">
+          <ul class="prt-radiolist">
+            <li class="prt-radiolist__item"><input type="radio" name="split" id="spliton" checked="checked"><label for="spliton" class="spliton">あり</label></li>
+            <li class="prt-radiolist__item"><input type="radio" name="split" id="splitoff"><label for="splitoff" class="splitoff">なし</label></li>
+          </ul><!-- .prt-radiolist -->
+        </div>
+      </li>
+      <li class="prt-signlist__item for-splitoff">
+        <div class="prt-signlist__th">スプリット支払い先ID</div>
+        <div class="prt-signlist__td"><input type="text" placeholder=""></div>
+      </li>
+      <li class="prt-signlist__item">
+        <ul class="prt-checkboxlist prt-checkboxlist--center">
+          <li class="prt-checkboxlist__item"><input type="checkbox" id="getnews"><label for="getnews">お知らせを受け取る</label></li>
+        </ul><!-- .prt-checkboxlist -->
+      </li>
+      <li class="prt-signlist__item">
+        <ul class="prt-checkboxlist prt-checkboxlist--center">
+          <li class="prt-checkboxlist__item"><input type="checkbox" id="getreport"><label for="getreport">レポートをメールで受け取る</label></li>
+        </ul><!-- .prt-checkboxlist -->
+      </li>
+    </ul><!-- .prt-signlist -->
+  </div>
+  <div class="prt-signboxbnrs">
+    <!-- <div class="prt-signboxbnrs__item prt-signboxbnrs__item--white"><a href="./signup_thanks.html">戻る</a></div> -->
+    <div class="prt-signboxbnrs__item"><a href="./regist_user_verify.html">登録する</a></div>
+  </div><!-- .prt-signboxbnrs -->
+</div><!-- .area-contentbox -->
+
+</div><!-- .area-all -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+$('.prt-radiolist input').on('click', function(){
+  if($('#spliton').prop('checked') == true) {
+    $('.for-splitoff').removeClass('none');
+  }
+  if($('#splitoff').prop('checked') == true) {
+    $('.for-splitoff').addClass('none');
+  }
+});
+</script>
+</body>
+</html>

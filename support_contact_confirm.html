@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ｜Rightswave</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="area-all area-login">
+
+  <div class="prt-signstep">
+    <div class="prt-signstep__item"><span>ユーザー登録</span></div>
+    <div class="prt-signstep__item prt-signstep__item--current"><span>アーティスト登録</span></div>
+    <div class="prt-signstep__item"><span>楽曲登録</span></div>
+    <div class="prt-signstep__item"><span>著作者登録</span></div>
+  </div><!-- .prt-signstep -->
+
+<div class="area-contentbox">
+  <h2 class="area-contentbox__h">お問い合わせ</h2>
+  <p class="area-contentbox__caption">
+    よくあるご質問は<a href="./support_faq.html">こちら</a>からご覧いただけます。<br>
+    以下のメールフォームからお問い合わせください。
+  </p>
+
+  <ul class="prt-artisteditlist">
+    <li class="prt-artisteditlist__item">
+      <div class="prt-artisteditlist__th">氏名</div>
+      <div class="prt-artisteditlist__td">氏名が入る</div>
+    </li>
+    <li class="prt-artisteditlist__item">
+      <div class="prt-artisteditlist__th">法人名</div>
+      <div class="prt-artisteditlist__td">法人名が入る</div>
+    </li>
+    <li class="prt-artisteditlist__item">
+      <div class="prt-artisteditlist__th">RightsWaveユーザー名</div>
+      <div class="prt-artisteditlist__td">ユーザー名が入る</div>
+    </li>
+    <li class="prt-artisteditlist__item">
+      <div class="prt-artisteditlist__th">お問い合わせの種別</div>
+      <div class="prt-artisteditlist__td">選択した種別が入る</div>
+    </li>
+    <li class="prt-artisteditlist__item">
+      <div class="prt-artisteditlist__th">お問い合わせの内容</div>
+      <div class="prt-artisteditlist__td">
+        問い合わせ内容のテキストが入る問い合わせ内容のテキストが入る問い合わせ内容のテキストが入る問い合わせ内容のテキストが入る問い合わせ内容のテキストが入る問い合わせ内容のテキストが入る問い合わせ内容のテキストが入る問い合わせ内容のテキストが入る問い合わせ内容のテキストが入る問い合わせ内容のテキストが入る問い合わせ内容のテキストが入る問い合わせ内容のテキストが入る
+      </div>
+    </li>
+  </ul><!-- .prt-artisteditlist -->
+
+  <div class="prt-signboxbnrs">
+    <!-- <div class="prt-signboxbnrs__item prt-signboxbnrs__item--white"><a href="./signup_thanks.html">戻る</a></div> -->
+    <div class="prt-signboxbnrs__item"><a href="./dashboard.html">送信する</a></div>
+  </div><!-- .prt-signboxbnrs -->
+
+</div><!-- .area-contentbox -->
+
+</div><!-- .area-all -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+  var artistitem = $('.prt-artistlist__item > a');
+  artistitem.on('click', function(){
+    $(this).next().slideToggle();
+    artistitem.toggleClass('pushed');
+  });
+
+  $('#openmore').on('click', function(){
+    $("#moreinput-artistlist").slideToggle();
+    $('#openmore-visible').css('display', 'block');
+  });
+
+});
+</script>
+</body>
+</html>

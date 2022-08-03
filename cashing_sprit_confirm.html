@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>著作者情報の登録｜Rightswave</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="area-all area-login">
+
+<div class="prt-signstep">
+  <div class="prt-signstep__item prt-signstep__item--current"><span>ユーザー登録</span></div>
+  <div class="prt-signstep__item"><span>アーティスト登録</span></div>
+  <div class="prt-signstep__item"><span>楽曲登録</span></div>
+  <div class="prt-signstep__item"><span>著作者登録</span></div>
+</div><!-- .prt-signstep -->
+
+<header class="area-header area-header--login">
+  <h1 class="area-header__logo">
+    <a href="#"><img src="./images/logo.svg" alt=""></a>
+    <span class="area-header__logo__sm">by Rightsscale, Inc.</span>
+  </h1>
+  <ul class="prt-headermenu">
+    <li class="prt-headermenu__item">
+      <a href="#">My Artists &amp; Release</a>
+      <ul class="prt-headerchildmenu">
+        <li class="prt-headerchildmenu__item"><a href="./regist_artist.html">アーティストの追加・編集</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./regist_song.html">楽曲の追加・編集</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./regist_author.html">著作権情報の登録依頼</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./regist_author_song.html">著作権登録楽曲の表示</a></li>
+      </ul><!-- .prt-headerchildmenu -->
+    </li>
+    <li class="prt-headermenu__item"><a href="#">Promotion</a></li>
+    <li class="prt-headermenu__item"><a href="#">Report</a></li>
+    <li class="prt-headermenu__item">
+      <a href="#">Cashing</a>
+      <ul class="prt-headerchildmenu">
+        <li class="prt-headerchildmenu__item"><a href="./cashing_choose_pay.html">支払い方法登録</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./cashing_payment_application.html">支払い請求</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./cashing_sprit.html">スプリット設定</a></li>
+      </ul><!-- .prt-headerchildmenu -->
+    </li>
+    <li class="prt-headermenu__item">
+      <a href="#">Support</a>
+      <ul class="prt-headerchildmenu">
+        <li class="prt-headerchildmenu__item"><a href="./support_faq.html">FAQ</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./support_contact.html">お問い合わせ</a></li>
+      </ul><!-- .prt-headerchildmenu -->
+    </li>
+    <li class="prt-headermenu__item"><a href="./account.html">Account</a></li>
+    <li class="prt-headermenu__item white"><a href="#">Josh</a></li>
+  </ul><!-- .prt-headermenu -->
+</header><!-- .area-header -->
+
+<div class="area-contentbox">
+  <h2 class="area-contentbox__h">スプリット設定</h2>
+  <p class="area-contentbox__caption">
+    あなたの収益をスプリットする場合、その対象となる作品と、相手について入力してください。<br>
+    （楽曲・アルバムの登録画面からも設定が可能です）
+  </p>
+  <div class="area-contentbox__content">
+    <ul class="prt-signlist">
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">対象アーティスト</div>
+        <div class="prt-signlist__td">設定済アーティスト名</div>
+      </li>
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">スプリット対象</div>
+        <div class="prt-signlist__td">アルバムAの楽曲すべて</div>
+      </li>
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">スプリット相手の<br>登録状態</div>
+        <div class="prt-signlist__td">RightsWaveユーザー</div>
+      </li>
+      <li class="prt-signlist__item only-user">
+        <div class="prt-signlist__th">スプリット相手の<br>ユーザー名</div>
+        <div class="prt-signlist__td">ユーザー名が入る</div>
+      </li>
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">シェアする収益</div>
+        <div class="prt-signlist__td">
+          <ul class="prt-spritmembers">
+            <li class="prt-spritmembers__item">
+              <div class="prt-spritmembers__name">山田太郎</div>
+              <div class="prt-spritmembers__radio">
+                25%
+              </div>
+            </li>
+            <li class="prt-spritmembers__item">
+              <div class="prt-spritmembers__name">佐藤一郎</div>
+              <div class="prt-spritmembers__radio">
+                25%
+              </div>
+            </li>
+            <li class="prt-spritmembers__item">
+              <div class="prt-spritmembers__name">鈴木次郎</div>
+              <div class="prt-spritmembers__radio">
+                25%
+              </div>
+            </li>
+          </ul><!-- .prt-spritmembers -->
+        </div>
+      </li>
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">スプリット期間</div>
+        <div class="prt-signlist__td">
+          <div class="prt-artistedit2col">
+            <div class="prt-artistedit2col__col">
+              <div class="prt-artisteditflex">
+                <div class="prt-artisteditflex__item">開始日</div>
+                <div class="prt-artisteditflex__item">20210831</div>
+              </div><!-- .prt-artisteditflex -->
+            </div><!-- .prt-artistedit2col -->
+            <div class="prt-artistedit2col__col">
+              <div class="prt-artisteditflex">
+                <div class="prt-artisteditflex__item">終了日</div>
+                <div class="prt-artisteditflex__item">20230831</div>
+              </div><!-- .prt-artisteditflex -->
+            </div>
+          </div><!-- .prt-artistedit2col -->
+        </div>
+      </li>
+    </ul><!-- .prt-signlist -->
+    <p class="area-contentbox__caption2">
+      上記のオファーが相手に提案され、承認を受けて以降、収益がスプリットされます。<br>
+      <a href="javascript:void(0)" target="_blank">個人情報の取り扱いについての注意</a>を確認の上、送信してください。
+    </p>
+  </div>
+  <div class="prt-signboxbnrs">
+    <!-- <div class="prt-signboxbnrs__item prt-signboxbnrs__item--white"><a href="./signup_thanks.html">戻る</a></div> -->
+    <div class="prt-signboxbnrs__item"><a href="./dashboard.html">送信する</a></div>
+  </div><!-- .prt-signboxbnrs -->
+</div><!-- .area-sign -->
+
+</div><!-- .area-all -->
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $('.prt-radiolist--author-user input').on('click', function(){
+    if($('#author_user01').prop('checked') == true) {
+      $('.only-user').removeClass('none');
+      $('.not-user').addClass('none');
+    }
+    if($('#author_user02').prop('checked') == true) {
+      $('.not-user').removeClass('none');
+      $('.only-user').addClass('none');
+    }
+  });
+</script>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プランの選択｜Rightswave</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="area-all area-login">
+
+  <div class="prt-signstep">
+    <div class="prt-signstep__item"><span>ユーザー登録</span></div>
+    <div class="prt-signstep__item prt-signstep__item--current"><span>アーティスト登録</span></div>
+    <div class="prt-signstep__item"><span>楽曲登録</span></div>
+    <div class="prt-signstep__item"><span>著作者登録</span></div>
+  </div><!-- .prt-signstep -->
+
+<header class="area-header area-header--login">
+  <h1 class="area-header__logo">
+    <a href="#"><img src="./images/logo.svg" alt=""></a>
+    <span class="area-header__logo__sm">by Rightsscale, Inc.</span>
+  </h1>
+  <ul class="prt-headermenu">
+    <li class="prt-headermenu__item">
+      <a href="#">My Artists &amp; Release</a>
+      <ul class="prt-headerchildmenu">
+        <li class="prt-headerchildmenu__item"><a href="./regist_artist.html">アーティストの追加・編集</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./regist_song.html">楽曲の追加・編集</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./regist_author.html">著作権情報の登録依頼</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./regist_author_song.html">著作権登録楽曲の表示</a></li>
+      </ul><!-- .prt-headerchildmenu -->
+    </li>
+    <li class="prt-headermenu__item"><a href="#">Promotion</a></li>
+    <li class="prt-headermenu__item"><a href="#">Report</a></li>
+    <li class="prt-headermenu__item">
+      <a href="#">Cashing</a>
+      <ul class="prt-headerchildmenu">
+        <li class="prt-headerchildmenu__item"><a href="./cashing_choose_pay.html">支払い方法登録</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./cashing_payment_application.html">支払い請求</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./cashing_sprit.html">スプリット設定</a></li>
+      </ul><!-- .prt-headerchildmenu -->
+    </li>
+    <li class="prt-headermenu__item">
+      <a href="#">Support</a>
+      <ul class="prt-headerchildmenu">
+        <li class="prt-headerchildmenu__item"><a href="./support_faq.html">FAQ</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./support_contact.html">お問い合わせ</a></li>
+      </ul><!-- .prt-headerchildmenu -->
+    </li>
+    <li class="prt-headermenu__item"><a href="./account.html">Account</a></li>
+    <li class="prt-headermenu__item white"><a href="#">Josh</a></li>
+  </ul><!-- .prt-headermenu -->
+</header><!-- .area-header -->
+
+<div class="area-contentbox">
+  <h2 class="area-contentbox__h">GMO決済の設定画面 - 入力内容確認</h2>
+  <p class="area-contentbox__caption">
+    入力内容確認を確認し、問題なければ設定を完了させてください。
+  </p>
+
+  <div class="area-chooseplan">
+    <div class="area-dummy">
+      <p class="area-dummy__catch">
+        入力させた情報の確認画面が表示される
+      </p>
+    </div><!-- .area-dummy -->
+    <div class="prt-signboxbnrs">
+      <div class="prt-signboxbnrs__item prt-signboxbnrs__item--white"><a href="./cashing_setting_service.html">戻る</a></div>
+      <div class="prt-signboxbnrs__item"><a href="./dashboard.html">設定する</a></div>
+    </div><!-- .prt-signboxbnrs -->
+  </div><!-- .area-chooseplan -->
+
+</div><!-- .area-contentbox -->
+
+</div><!-- .area-all -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+  var artistitem = $('.prt-artistlist__item > a');
+  artistitem.on('click', function(){
+    $(this).next().slideToggle();
+    artistitem.toggleClass('pushed');
+  });
+
+  $('#openmore').on('click', function(){
+    $("#moreinput-artistlist").slideToggle();
+    $('#openmore-visible').css('display', 'block');
+  });
+
+});
+</script>
+</body>
+</html>

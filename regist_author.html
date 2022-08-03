@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>著作者情報の登録｜Rightswave</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="area-all area-login">
+
+<div class="prt-signstep">
+  <div class="prt-signstep__item prt-signstep__item--current"><span>ユーザー登録</span></div>
+  <div class="prt-signstep__item"><span>アーティスト登録</span></div>
+  <div class="prt-signstep__item"><span>楽曲登録</span></div>
+  <div class="prt-signstep__item"><span>著作者登録</span></div>
+</div><!-- .prt-signstep -->
+
+<header class="area-header area-header--login">
+  <h1 class="area-header__logo">
+    <a href="#"><img src="./images/logo.svg" alt=""></a>
+    <span class="area-header__logo__sm">by Rightsscale, Inc.</span>
+  </h1>
+  <ul class="prt-headermenu">
+    <li class="prt-headermenu__item">
+      <a href="#">My Artists &amp; Release</a>
+      <ul class="prt-headerchildmenu">
+        <li class="prt-headerchildmenu__item"><a href="./regist_artist.html">アーティストの追加・編集</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./regist_song.html">楽曲の追加・編集</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./regist_author.html">著作権情報の登録依頼</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./regist_author_song.html">著作権登録楽曲の表示</a></li>
+      </ul><!-- .prt-headerchildmenu -->
+    </li>
+    <li class="prt-headermenu__item"><a href="#">Promotion</a></li>
+    <li class="prt-headermenu__item"><a href="#">Report</a></li>
+    <li class="prt-headermenu__item">
+      <a href="#">Cashing</a>
+      <ul class="prt-headerchildmenu">
+        <li class="prt-headerchildmenu__item"><a href="./cashing_choose_pay.html">支払い方法登録</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./cashing_payment_application.html">支払い請求</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./cashing_sprit.html">スプリット設定</a></li>
+      </ul><!-- .prt-headerchildmenu -->
+    </li>
+    <li class="prt-headermenu__item">
+      <a href="#">Support</a>
+      <ul class="prt-headerchildmenu">
+        <li class="prt-headerchildmenu__item"><a href="./support_faq.html">FAQ</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./support_contact.html">お問い合わせ</a></li>
+      </ul><!-- .prt-headerchildmenu -->
+    </li>
+    <li class="prt-headermenu__item"><a href="./account.html">Account</a></li>
+    <li class="prt-headermenu__item white"><a href="#">Josh</a></li>
+  </ul><!-- .prt-headermenu -->
+</header><!-- .area-header -->
+
+<div class="area-contentbox">
+  <h2 class="area-contentbox__h">著作権情報の登録申し込み</h2>
+  <p class="area-contentbox__caption">
+    下記の情報に基づき、RightsWaveにて楽曲の権利の正当性を確認の後、<br>
+    指定された著作者に著作権の保有確認と条件の確認を行います。<br>
+    また、<strong>共作者との共同作品の場合は、分配などすべての条件に付いて合意済みの場合のみ</strong>、下記登録を行ってください。
+  </p>
+  <div class="area-contentbox__content">
+    <ul class="prt-signlist">
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">対象楽曲</div>
+        <div class="prt-signlist__td">
+          <label for="regist_aothor_song" class="prt-signlist__pd">
+            <select name="" id="regist_aothor_song">
+              <option value="artist00">未登録の楽曲</option>
+              <option value="artist01">登録済みの楽曲01</option>
+              <option value="artist02">登録済みの楽曲02</option>
+              <option value="artist03">登録済みの楽曲03</option>
+            </select>
+          </label>
+        </div>
+      </li>
+    </ul><!-- .prt-signlist -->
+    <ul class="prt-signlist prt-signlist--author">
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">著作者の登録状態</div>
+        <div class="prt-signlist__td">
+          <ul class="prt-radiolist prt-radiolist--author-user">
+            <li class="prt-radiolist__item">
+              <input type="radio" name="author_user" id="author_user01" checked><label for="author_user01">RightsWaveユーザー</label>
+            </li>
+            <li class="prt-radiolist__item">
+              <input type="radio" name="author_user" id="author_user02"><label for="author_user02">RightsWaveユーザーではない</label>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="prt-signlist__item only-user">
+        <div class="prt-signlist__th">著作者ユーザー名</div>
+        <div class="prt-signlist__td"><input type="text"></div>
+      </li>
+      <li class="prt-signlist__item not-user none">
+        <div class="prt-signlist__th">著作者氏名</div>
+        <div class="prt-signlist__td"><input type="text"></div>
+      </li>
+      <li class="prt-signlist__item not-user none">
+        <div class="prt-signlist__th">著作者氏名（カナ）</div>
+        <div class="prt-signlist__td"><input type="text"></div>
+      </li>
+      <li class="prt-signlist__item not-user none">
+        <div class="prt-signlist__th">著作者メールアドレス</div>
+        <div class="prt-signlist__td"><input type="email"></div>
+      </li>
+      <li class="prt-signlist__item" style="display: none">
+        <div class="prt-plusbtn"><a href="javascript:void(0)"><span>共作者を追加する</span></a></div>
+      </li>
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">料率</div>
+        <div class="prt-signlist__td"><input type="text" placeholder="25%"></div>
+      </li>
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">役割</div>
+        <div class="prt-signlist__td">
+          <ul class="prt-checkboxlist prt-checkboxlist--vertical prt-authorrole">
+            <li class="prt-checkboxlist__item"><input type="radio" name="authorrole" id="lyric"><label for="lyric" class="lyric">作詞</label></li>
+            <li class="prt-checkboxlist__item"><input type="radio" name="authorrole" id="compose"><label for="compose" class="compose">作曲</label></li>
+            <li class="prt-checkboxlist__item"><input type="radio" name="authorrole" id="lyric-sub"><label for="lyric-sub" class="lyric-sub">補作詞</label></li>
+            <li class="prt-checkboxlist__item"><input type="radio" name="authorrole" id="compose-sub"><label for="compose-sub" class="compose-sub">補作曲</label></li>
+            <li class="prt-checkboxlist__item"><input type="radio" name="authorrole" id="translate"><label for="translate" class="translate">訳詞</label></li>
+            <li class="prt-checkboxlist__item"><input type="radio" name="authorrole" id="arrange"><label for="arrange" class="arrange">編曲</label></li>
+            <li class="prt-checkboxlist__item"><input type="radio" name="authorrole" id="initialarrange"><label for="initialarrange" class="initialarrange">公表時編曲</label></li>
+            <li class="prt-checkboxlist__item"><input type="radio" name="authorrole" id="notauthor"><label for="notauthor" class="notauthor">著作者ではない</label></li>
+          </ul>
+        </div>
+      </li>
+      <a href="javascirpt:void(0)" class="prt-signlist--author__close">×</a>
+    </ul><!-- .prt-signlist -->
+    <ul class="prt-signlist prt-signlist--author">
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">著作者の登録状態</div>
+        <div class="prt-signlist__td">
+          <ul class="prt-radiolist prt-radiolist--author-user">
+            <li class="prt-radiolist__item">
+              <input type="radio" name="author_user" id="author_user01" checked><label for="author_user01">RightsWaveユーザー</label>
+            </li>
+            <li class="prt-radiolist__item">
+              <input type="radio" name="author_user" id="author_user02"><label for="author_user02">RightsWaveユーザーではない</label>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="prt-signlist__item only-user">
+        <div class="prt-signlist__th">著作者ユーザー名</div>
+        <div class="prt-signlist__td"><input type="text"></div>
+      </li>
+      <li class="prt-signlist__item not-user none">
+        <div class="prt-signlist__th">著作者氏名</div>
+        <div class="prt-signlist__td"><input type="text"></div>
+      </li>
+      <li class="prt-signlist__item not-user none">
+        <div class="prt-signlist__th">著作者氏名（カナ）</div>
+        <div class="prt-signlist__td"><input type="text"></div>
+      </li>
+      <li class="prt-signlist__item not-user none">
+        <div class="prt-signlist__th">著作者メールアドレス</div>
+        <div class="prt-signlist__td"><input type="email"></div>
+      </li>
+      <li class="prt-signlist__item" style="display: none">
+        <div class="prt-plusbtn"><a href="javascript:void(0)"><span>共作者を追加する</span></a></div>
+      </li>
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">料率</div>
+        <div class="prt-signlist__td"><input type="text" placeholder="25%"></div>
+      </li>
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">役割</div>
+        <div class="prt-signlist__td">
+          <ul class="prt-checkboxlist prt-checkboxlist--vertical prt-authorrole">
+            <li class="prt-checkboxlist__item"><input type="radio" name="authorrole" id="lyric"><label for="lyric" class="lyric">作詞</label></li>
+            <li class="prt-checkboxlist__item"><input type="radio" name="authorrole" id="compose"><label for="compose" class="compose">作曲</label></li>
+            <li class="prt-checkboxlist__item"><input type="radio" name="authorrole" id="lyric-sub"><label for="lyric-sub" class="lyric-sub">補作詞</label></li>
+            <li class="prt-checkboxlist__item"><input type="radio" name="authorrole" id="compose-sub"><label for="compose-sub" class="compose-sub">補作曲</label></li>
+            <li class="prt-checkboxlist__item"><input type="radio" name="authorrole" id="translate"><label for="translate" class="translate">訳詞</label></li>
+            <li class="prt-checkboxlist__item"><input type="radio" name="authorrole" id="arrange"><label for="arrange" class="arrange">編曲</label></li>
+            <li class="prt-checkboxlist__item"><input type="radio" name="authorrole" id="initialarrange"><label for="initialarrange" class="initialarrange">公表時編曲</label></li>
+            <li class="prt-checkboxlist__item"><input type="radio" name="authorrole" id="notauthor"><label for="notauthor" class="notauthor">著作者ではない</label></li>
+          </ul>
+        </div>
+      </li>
+      <a href="javascirpt:void(0)" class="prt-signlist--author__close">×</a>
+    </ul><!-- .prt-signlist -->
+    <ul class="prt-signlist prt-signlist--author">
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">著作者の登録状態</div>
+        <div class="prt-signlist__td">
+          <ul class="prt-radiolist prt-radiolist--author-user">
+            <li class="prt-radiolist__item">
+              <input type="radio" name="author_user" id="author_user01" checked><label for="author_user01">RightsWaveユーザー</label>
+            </li>
+            <li class="prt-radiolist__item">
+              <input type="radio" name="author_user" id="author_user02"><label for="author_user02">RightsWaveユーザーではない</label>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="prt-signlist__item only-user">
+        <div class="prt-signlist__th">著作者ユーザー名</div>
+        <div class="prt-signlist__td"><input type="text"></div>
+      </li>
+      <li class="prt-signlist__item not-user none">
+        <div class="prt-signlist__th">著作者氏名</div>
+        <div class="prt-signlist__td"><input type="text"></div>
+      </li>
+      <li class="prt-signlist__item not-user none">
+        <div class="prt-signlist__th">著作者氏名（カナ）</div>
+        <div class="prt-signlist__td"><input type="text"></div>
+      </li>
+      <li class="prt-signlist__item not-user none">
+        <div class="prt-signlist__th">著作者メールアドレス</div>
+        <div class="prt-signlist__td"><input type="email"></div>
+      </li>
+      <li class="prt-signlist__item" style="display: none">
+        <div class="prt-plusbtn"><a href="javascript:void(0)"><span>共作者を追加する</span></a></div>
+      </li>
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">料率</div>
+        <div class="prt-signlist__td"><input type="text" placeholder="25%"></div>
+      </li>
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">役割</div>
+        <div class="prt-signlist__td">
+          <ul class="prt-checkboxlist prt-checkboxlist--vertical prt-authorrole">
+            <li class="prt-checkboxlist__item"><input type="radio" name="authorrole" id="lyric"><label for="lyric" class="lyric">作詞</label></li>
+            <li class="prt-checkboxlist__item"><input type="radio" name="authorrole" id="compose"><label for="compose" class="compose">作曲</label></li>
+            <li class="prt-checkboxlist__item"><input type="radio" name="authorrole" id="lyric-sub"><label for="lyric-sub" class="lyric-sub">補作詞</label></li>
+            <li class="prt-checkboxlist__item"><input type="radio" name="authorrole" id="compose-sub"><label for="compose-sub" class="compose-sub">補作曲</label></li>
+            <li class="prt-checkboxlist__item"><input type="radio" name="authorrole" id="translate"><label for="translate" class="translate">訳詞</label></li>
+            <li class="prt-checkboxlist__item"><input type="radio" name="authorrole" id="arrange"><label for="arrange" class="arrange">編曲</label></li>
+            <li class="prt-checkboxlist__item"><input type="radio" name="authorrole" id="initialarrange"><label for="initialarrange" class="initialarrange">公表時編曲</label></li>
+            <li class="prt-checkboxlist__item"><input type="radio" name="authorrole" id="notauthor"><label for="notauthor" class="notauthor">著作者ではない</label></li>
+          </ul>
+        </div>
+      </li>
+      <a href="javascirpt:void(0)" class="prt-signlist--author__close">×</a>
+    </ul><!-- .prt-signlist -->
+    <ul class="prt-signlist">
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">譲渡期間</div>
+        <div class="prt-signlist__td"><input type="text" placeholder="原則、承認日から１年間とします"></div>
+      </li>
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">譲渡地域</div>
+        <div class="prt-signlist__td">
+          <label for="regist_aothor_song-territory" class="prt-signlist__pd">
+            <select name="" id="regist_aothor_song-territory">
+              <option value="territory00">全世界</option>
+              <option value="territory01">国01</option>
+              <option value="territory02">国02</option>
+              <option value="territory03">国03</option>
+            </select>
+          </label>
+        </div>
+      </li>
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">自動更新</div>
+        <div class="prt-signlist__td">
+          <ul class="prt-radiolist">
+            <li class="prt-radiolist__item"><input type="radio" name="author_autoupdate" id="author_autoupdate_on"><label for="author_autoupdate_on">する</label></li>
+            <li class="prt-radiolist__item"><input type="radio" name="author_autoupdate" id="author_autoupdate_off"><label for="author_autoupdate_off">しない</label></li>
+          </ul>
+        </div>
+      </li>
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">公表形式</div>
+        <div class="prt-signlist__td">
+          <label for="regist_aothor_song-delivertype" class="prt-signlist__pd">
+            <select name="" id="regist_aothor_song-delivertype">
+              <option value="delivertype00">配信</option>
+              <option value="delivertype01">項目01</option>
+              <option value="delivertype02">項目02</option>
+              <option value="delivertype03">項目03</option>
+            </select>
+          </label>
+        </div>
+      </li>
+    </ul><!-- .prt-signlist -->
+    <div class="prt-registmore">
+      <a href="javascript:void(0)" id="openmore-author"><span>さらに情報を入力する</span></a>
+    </div><!-- .prt-registmore -->
+    <div class="area-moreauthor" id="area-moreauthor">
+      <ul class="prt-signlist">
+        <li class="prt-signlist__item">
+          <div class="prt-signlist__th">IPI Base</div>
+          <div class="prt-signlist__td"><input type="text" placeholder=""></div>
+        </li>
+        <li class="prt-signlist__item">
+          <div class="prt-signlist__th">IPI Number</div>
+          <div class="prt-signlist__td"><input type="text" placeholder=""></div>
+        </li>
+      </ul><!-- .prt-signlist -->
+
+      <div class="prt-listheading">作品情報</div>
+      <ul class="prt-signlist">
+        <li class="prt-signlist__item">
+          <div class="prt-signlist__th">JASRACコード</div>
+          <div class="prt-signlist__td"><input type="text" placeholder=""></div>
+        </li>
+        <li class="prt-signlist__item">
+          <div class="prt-signlist__th">ISWC</div>
+          <div class="prt-signlist__td"><input type="text" placeholder=""></div>
+        </li>
+        <li class="prt-signlist__item">
+          <div class="prt-signlist__th">公表年月</div>
+          <div class="prt-signlist__td"><input type="text" placeholder="yyyymmdd"></div>
+        </li>
+      </ul><!-- .prt-signlist -->
+
+      <div class="prt-listheading">広告情報</div>
+      <ul class="prt-signlist">
+        <li class="prt-signlist__item">
+          <div class="prt-signlist__th">広告主</div>
+          <div class="prt-signlist__td"><input type="text" placeholder=""></div>
+        </li>
+        <li class="prt-signlist__item">
+          <div class="prt-signlist__th">商品名</div>
+          <div class="prt-signlist__td"><input type="text" placeholder=""></div>
+        </li>
+        <li class="prt-signlist__item">
+          <div class="prt-signlist__th">期間</div>
+          <div class="prt-signlist__td"><input type="text" placeholder=""></div>
+        </li>
+      </ul><!-- .prt-signlist -->
+
+      <div class="prt-listheading">映画情報</div>
+      <ul class="prt-signlist">
+        <li class="prt-signlist__item">
+          <div class="prt-signlist__th">映画放送区分</div>
+          <div class="prt-signlist__td"><input type="text" placeholder=""></div>
+        </li>
+        <li class="prt-signlist__item">
+          <div class="prt-signlist__th">製作者</div>
+          <div class="prt-signlist__td"><input type="text" placeholder=""></div>
+        </li>
+        <li class="prt-signlist__item">
+          <div class="prt-signlist__th">映画/番組名</div>
+          <div class="prt-signlist__td"><input type="text" placeholder=""></div>
+        </li>
+        <li class="prt-signlist__item">
+          <div class="prt-signlist__th">テーマ音楽</div>
+          <div class="prt-signlist__td"><input type="text" placeholder=""></div>
+        </li>
+        <li class="prt-signlist__item">
+          <div class="prt-signlist__th">背景音楽</div>
+          <div class="prt-signlist__td"><input type="text" placeholder=""></div>
+        </li>
+      </ul><!-- .prt-signlist -->
+
+      <div class="prt-listheading">録音情報</div>
+      <ul class="prt-signlist">
+        <li class="prt-signlist__item">
+          <div class="prt-signlist__th">レコード会社名</div>
+          <div class="prt-signlist__td"><input type="text" placeholder=""></div>
+        </li>
+        <li class="prt-signlist__item">
+          <div class="prt-signlist__th">発表媒体</div>
+          <div class="prt-signlist__td"><input type="text" placeholder=""></div>
+        </li>
+      </ul><!-- .prt-signlist -->
+
+    </div><!-- .area-moreauthor -->
+  </div>
+  <div class="prt-signboxbnrs">
+    <!-- <div class="prt-signboxbnrs__item prt-signboxbnrs__item--white"><a href="./signup_thanks.html">戻る</a></div> -->
+    <div class="prt-signboxbnrs__item"><a href="./regist_author_confirm.html">送信する</a></div>
+  </div><!-- .prt-signboxbnrs -->
+</div><!-- .area-sign -->
+
+</div><!-- .area-all -->
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $('.prt-radiolist--author-user input').on('click', function(){
+    if($('#author_user01').prop('checked') == true) {
+      $('.only-user').removeClass('none');
+      $('.not-user').addClass('none');
+    }
+    if($('#author_user02').prop('checked') == true) {
+      $('.not-user').removeClass('none');
+      $('.only-user').addClass('none');
+    }
+  });
+
+  $('#openmore-author').on('click', function(){
+    $('#area-moreauthor').slideToggle();
+    $('#openmore-author').addClass('none');
+  });
+</script>
+</html>

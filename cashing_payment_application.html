@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プランの選択｜Rightswave</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="area-all area-login">
+
+  <div class="prt-signstep">
+    <div class="prt-signstep__item"><span>ユーザー登録</span></div>
+    <div class="prt-signstep__item prt-signstep__item--current"><span>アーティスト登録</span></div>
+    <div class="prt-signstep__item"><span>楽曲登録</span></div>
+    <div class="prt-signstep__item"><span>著作者登録</span></div>
+  </div><!-- .prt-signstep -->
+
+<header class="area-header area-header--login">
+  <h1 class="area-header__logo">
+    <a href="#"><img src="./images/logo.svg" alt=""></a>
+    <span class="area-header__logo__sm">by Rightsscale, Inc.</span>
+  </h1>
+  <ul class="prt-headermenu">
+    <li class="prt-headermenu__item">
+      <a href="#">My Artists &amp; Release</a>
+      <ul class="prt-headerchildmenu">
+        <li class="prt-headerchildmenu__item"><a href="./regist_artist.html">アーティストの追加・編集</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./regist_song.html">楽曲の追加・編集</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./regist_author.html">著作権情報の登録依頼</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./regist_author_song.html">著作権登録楽曲の表示</a></li>
+      </ul><!-- .prt-headerchildmenu -->
+    </li>
+    <li class="prt-headermenu__item"><a href="#">Promotion</a></li>
+    <li class="prt-headermenu__item"><a href="#">Report</a></li>
+    <li class="prt-headermenu__item">
+      <a href="#">Cashing</a>
+      <ul class="prt-headerchildmenu">
+        <li class="prt-headerchildmenu__item"><a href="./cashing_choose_pay.html">支払い方法登録</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./cashing_payment_application.html">支払い請求</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./cashing_sprit.html">スプリット設定</a></li>
+      </ul><!-- .prt-headerchildmenu -->
+    </li>
+    <li class="prt-headermenu__item">
+      <a href="#">Support</a>
+      <ul class="prt-headerchildmenu">
+        <li class="prt-headerchildmenu__item"><a href="./support_faq.html">FAQ</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./support_contact.html">お問い合わせ</a></li>
+      </ul><!-- .prt-headerchildmenu -->
+    </li>
+    <li class="prt-headermenu__item"><a href="./account.html">Account</a></li>
+    <li class="prt-headermenu__item white"><a href="#">Josh</a></li>
+  </ul><!-- .prt-headermenu -->
+</header><!-- .area-header -->
+
+<div class="area-contentbox">
+  <h2 class="area-contentbox__h">支払い申請</h2>
+  <p class="area-contentbox__caption">
+    お支払い方法：GMO決済
+  </p>
+
+  <div class="area-payment">
+    <ul class="prt-paymenttable">
+      <li class="prt-paymenttable__item">
+        <div class="prt-paymenttable__th">現在申請中のお支払い金額</div>
+        <div class="prt-paymenttable__td">
+          <span class="prt-paymenttable__price"><span class="prt-paymenttable__unit">¥</span>10,000</span>
+        </div>
+      </li>
+      <li class="prt-paymenttable__item">
+        <div class="prt-paymenttable__th">現在のお支払い可能額</div>
+        <div class="prt-paymenttable__td">
+          <span class="prt-paymenttable__price"><span class="prt-paymenttable__unit">¥</span>50,000</span>
+        </div>
+      </li>
+      <li class="prt-paymenttable__item">
+        <div class="prt-paymenttable__th">出金ご希望額</div>
+        <div class="prt-paymenttable__td"><input type="text" placeholder="0"></div>
+      </li>
+      <li class="prt-paymenttable__item">
+        <div class="prt-paymenttable__th">お支払い方法</div>
+        <div class="prt-paymenttable__td">
+          <label for="howgetpayment" class="prt-paymentpd">
+            <select name="" id="howgetpayment">
+              <option value="0">登録口座</option>
+              <option value="1">未登録口座</option>
+              <option value="2">セブンATM受取</option>
+              <option value="3">Amazonギフト券受取</option>
+            </select>
+          </label>
+        </div>
+      </li>
+    </ul><!-- .prt-paymenttable -->
+    <div class="prt-signboxbnrs">
+        <!-- <div class="prt-signboxbnrs__item prt-signboxbnrs__item--white"><a href="./cashing_setting_service.html">戻る</a></div> -->
+        <div class="prt-signboxbnrs__item"><button type="submit">申請する</button></div>
+    </div>
+  </div><!-- .area-payment -->
+
+</div><!-- .area-contentbox -->
+
+</div><!-- .area-all -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+  var artistitem = $('.prt-artistlist__item > a');
+  artistitem.on('click', function(){
+    $(this).next().slideToggle();
+    artistitem.toggleClass('pushed');
+  });
+
+  $('#openmore').on('click', function(){
+    $("#moreinput-artistlist").slideToggle();
+    $('#openmore-visible').css('display', 'block');
+  });
+
+});
+</script>
+</body>
+</html>

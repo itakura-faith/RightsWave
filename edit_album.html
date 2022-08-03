@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>楽曲情報の登録｜Rightswave</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="area-all area-login">
+
+<div class="prt-signstep">
+  <div class="prt-signstep__item"><span>1. ユーザー登録</span></div>
+  <div class="prt-signstep__item"><span>2. アーティスト登録</span></div>
+  <div class="prt-signstep__item prt-signstep__item--current"><span>3. 楽曲登録</span></div>
+  <div class="prt-signstep__item"><span>4. 著作者登録</span></div>
+</div><!-- .prt-signstep -->
+
+<header class="area-header area-header--login">
+  <h1 class="area-header__logo">
+    <a href="#"><img src="./images/logo.svg" alt=""></a>
+    <span class="area-header__logo__sm">by Rightsscale, Inc.</span>
+  </h1>
+  <ul class="prt-headermenu">
+    <li class="prt-headermenu__item">
+      <a href="#">My Artists &amp; Release</a>
+      <ul class="prt-headerchildmenu">
+        <li class="prt-headerchildmenu__item"><a href="./regist_artist.html">アーティストの追加・編集</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./regist_song.html">楽曲の追加・編集</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./regist_author.html">著作権情報の登録依頼</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./regist_author_song.html">著作権登録楽曲の表示</a></li>
+      </ul><!-- .prt-headerchildmenu -->
+    </li>
+    <li class="prt-headermenu__item"><a href="#">Promotion</a></li>
+    <li class="prt-headermenu__item"><a href="#">Report</a></li>
+    <li class="prt-headermenu__item">
+      <a href="#">Cashing</a>
+      <ul class="prt-headerchildmenu">
+        <li class="prt-headerchildmenu__item"><a href="./cashing_choose_pay.html">支払い方法登録</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./cashing_payment_application.html">支払い請求</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./cashing_sprit.html">スプリット設定</a></li>
+      </ul><!-- .prt-headerchildmenu -->
+    </li>
+    <li class="prt-headermenu__item">
+      <a href="#">Support</a>
+      <ul class="prt-headerchildmenu">
+        <li class="prt-headerchildmenu__item"><a href="./support_faq.html">FAQ</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./support_contact.html">お問い合わせ</a></li>
+      </ul><!-- .prt-headerchildmenu -->
+    </li>
+    <li class="prt-headermenu__item"><a href="./account.html">Account</a></li>
+    <li class="prt-headermenu__item white"><a href="#">Josh</a></li>
+  </ul><!-- .prt-headermenu -->
+</header><!-- .area-header -->
+
+<div class="area-contentbox">
+
+  <h2 class="area-contentbox__h"><strong>3.</strong>アルバム編集</h2>
+  <p class="area-contentbox__caption">
+    アルバム情報の情報を入力します。
+  </p>
+
+  <div class="prt-artistedithead" style="display: none">
+    <div class="prt-artistedithead__search">
+      <input type="text" placeholder="検索ワードを入れる"><a href="#"></a>
+    </div>
+    <div class="prt-artistedithead__new"><a href="#">新規追加</a></div>
+  </div><!-- .prt-artistedithead -->
+
+  <div class="area-newsong">
+    <ul class="prt-newsongtab">
+      <li class="prt-newsongtab__item prt-newsongtab__item--w100 current"><a href="javascript:void(0)">アルバムを登録</a></li>
+    </ul><!-- .prt-newsongtab -->
+    <div class="area-newsong__box">
+      <ul class="prt-artisteditlist">
+        <li class="prt-artisteditlist__item">
+          <div class="prt-artisteditlist__th">リリースするアーティスト</div>
+          <div class="prt-artisteditlist__td">
+            <label for="releaseartist" class="prt-artisteditlist__pd">
+              <select name="" id="releaseartist">
+                <option value="artist_a">登録済アーティストA</option>
+                <option value="artist_b">登録済アーティストB</option>
+                <option value="artist_c">登録済アーティストC</option>
+              </select>
+            </label>
+          </div>
+        </li>
+        <li class="prt-artisteditlist__item">
+          <div class="prt-artisteditlist__th">アルバムタイトル</div>
+          <div class="prt-artisteditlist__td"><input type="text"></div>
+        </li>
+        <li class="prt-artisteditlist__item">
+          <div class="prt-artisteditlist__th">アルバムタイトル（カナ）</div>
+          <div class="prt-artisteditlist__td"><input type="text"></div>
+        </li>
+        <li class="prt-artisteditlist__item">
+          <div class="prt-artisteditlist__th">アルバムタイトル（海外での表記）</div>
+          <div class="prt-artisteditlist__td"><input type="text"></div>
+        </li>
+        <li class="prt-artisteditlist__item">
+          <div class="prt-artisteditlist__th">アルバムアーティスト名</div>
+          <div class="prt-artisteditlist__td"><input type="text"></div>
+        </li>
+        <li class="prt-artisteditlist__item">
+          <div class="prt-artisteditlist__th">アルバムアーティスト名（カナ）</div>
+          <div class="prt-artisteditlist__td"><input type="text"></div>
+        </li>
+        <li class="prt-artisteditlist__item">
+          <div class="prt-artisteditlist__th">アルバムアーティスト名（海外での表記）</div>
+          <div class="prt-artisteditlist__td"><input type="text"></div>
+        </li>
+        <li class="prt-artisteditlist__item">
+          <div class="prt-artisteditlist__th">ディスク番号</div>
+          <div class="prt-artisteditlist__td"><input type="text" value="1"></div>
+        </li>
+        <li class="prt-artisteditlist__item">
+          <div class="prt-artisteditlist__th">CDリリース日</div>
+          <div class="prt-artisteditlist__td"><input type="text"></div>
+        </li>
+        <li class="prt-artisteditlist__item">
+          <div class="prt-artisteditlist__th">アルバム配信開始日（ダウンロード）</div>
+          <div class="prt-artisteditlist__td">
+            <ul class="prt-radiolist">
+              <li class="prt-radiolist__item"><input type="radio" name="deliverdate-album-dl" id="anytime-album-dl" checked="checked"><label for="anytime-album-dl" class="anytime-album-dl">いつでもよい(登録次第)</label></li>
+              <li class="prt-radiolist__item"><input type="radio" name="deliverdate-album-dl" id="set-album-dl"><label for="set-album-dl" class="set-album-dl">希望日を入力</label></li>
+            </ul><!-- .prt-radiolist -->
+          </div>
+        </li>
+        <li class="prt-artisteditlist__item">
+          <div class="prt-artisteditlist__th">アルバム配信開始日（ストリーミング）</div>
+          <div class="prt-artisteditlist__td">
+            <ul class="prt-radiolist">
+              <li class="prt-radiolist__item"><input type="radio" name="deliverdate-album-st" id="anytime-album-st" checked="checked"><label for="anytime-album-st" class="anytime-album-st">いつでもよい(登録次第)</label></li>
+              <li class="prt-radiolist__item"><input type="radio" name="deliverdate-album-st" id="set-album-st"><label for="set-album-st" class="set-album-st">希望日を入力</label></li>
+            </ul><!-- .prt-radiolist -->
+          </div>
+        </li>
+        <li class="prt-artisteditlist__item">
+          <div class="prt-artisteditlist__th">コピーライト表記<br>("リリース年(YYYY)+原盤の権利者"など)</div>
+          <div class="prt-artisteditlist__td"><input type="text"></div>
+        </li>
+        <li class="prt-artisteditlist__item">
+          <div class="prt-artisteditlist__th">ジャンル</div>
+          <div class="prt-artisteditlist__td">
+            <label for="artisteditlist-genre" class="prt-artisteditlist__pd">
+              <select name="" id="artisteditlist-genre">
+                <option value="japan">ロック</option>
+                <option value="sample01">ジャンル01</option>
+                <option value="sample02">ジャンル02</option>
+                <option value="sample03">ジャンル03</option>
+              </select>
+            </label>
+          </div>
+        </li>
+        <li class="prt-artisteditlist__item">
+          <div class="prt-artisteditlist__th">販売形式・地域</div>
+          <div class="prt-artisteditlist__td">
+            <ul class="prt-checkboxlist prt-checkboxlist--vertical">
+              <li class="prt-checkboxlist__item"><input type="radio" name="deliverarea" id="subscription" checked="checked"><label for="subscription" class="subscription" checked="checked">サブスク</label></li>
+              <li class="prt-checkboxlist__item"><input type="radio" name="deliverarea" id="alacarte" checked="checked"><label for="alacarte" class="alacarte">アラカルト</label></li>
+              <li class="prt-checkboxlist__item"><input type="radio" name="deliverarea" id="japan" checked="checked"><label for="japan" class="japan">国内</label></li>
+              <li class="prt-checkboxlist__item"><input type="radio" name="deliverarea" id="abroad" checked="checked"><label for="abroad" class="abroad">海外</label></li>
+            </ul>
+          </div>
+        </li>
+        <li class="prt-artisteditlist__item">
+          <div class="prt-artisteditlist__th">販売希望価格</div>
+          <div class="prt-artisteditlist__td">
+            <div class="prt-artistedit2col">
+              <div class="prt-artistedit2col__col">通常</div>
+              <div class="prt-artistedit2col__col">
+                <div class="prt-artisteditflex">
+                  <div class="prt-artisteditflex__item">
+                    <label for="songedit-price" class="prt-artisteditlist__pd w100">
+                      <select name="" id="songedit-price">
+                        <option value="150">150</option>
+                        <option value="200">200</option>
+                        <option value="250">250</option>
+                      </select>
+                    </label>
+                  </div>
+                  <div class="prt-artisteditflex__item">円</div>
+                </div>
+              </div>
+            </div><!-- .prt-artistedit2col -->
+          </div>
+        </li>
+        <li class="prt-artisteditlist__item">
+          <div class="prt-artisteditlist__th">
+            アルバム用アートワーク
+            <span class="prt-artisteditlist__thcaption">※サイズ3000 x 3000以上</span>
+          </div>
+          <div class="prt-artisteditlist__td">
+            <div class="prt-editimage">
+              <div class="prt-editimage__thumb" style="background-image: url('./images/test_artist.jpg')"></div>
+              <div class="prt-editimage__link"><a href="#">画像を変更する</a></div>
+            </div><!-- .prt-editimage -->
+          </div>
+        </li>
+      </ul><!-- .prt-artisteditlist -->
+      <div class="prt-registmore">
+        <a href="javascript:void(0)" id="openmore-package-album"><span>さらに情報を入力する</span></a>
+      </div>
+      <ul class="prt-artisteditlist" id="area-morepackage-album">
+        <li class="prt-artisteditlist__item">
+          <div class="prt-artisteditlist__th">JANコード</div>
+          <div class="prt-artisteditlist__td"><input type="text"></div>
+        </li>
+        <li class="prt-artisteditlist__item">
+          <div class="prt-artisteditlist__th">品番</div>
+          <div class="prt-artisteditlist__td"><input type="text"></div>
+        </li>
+        <li class="prt-artisteditlist__item">
+          <div class="prt-artisteditlist__th">アルバムサブタイトル</div>
+          <div class="prt-artisteditlist__td"><input type="text"></div>
+        </li>
+        <li class="prt-artisteditlist__item">
+          <div class="prt-artisteditlist__th">アルバムサブタイトル（カナ）</div>
+          <div class="prt-artisteditlist__td"><input type="text"></div>
+        </li>
+        <li class="prt-artisteditlist__item">
+          <div class="prt-artisteditlist__th">アルバムサブタイトル（海外での表記）</div>
+          <div class="prt-artisteditlist__td"><input type="text"></div>
+        </li>
+          <li class="prt-artisteditlist__item">
+            <div class="prt-artisteditlist__th">iTunesプレオーダー<br>予約注文開始日</div>
+            <div class="prt-artisteditlist__td">
+              <ul class="prt-radiolist">
+                <li class="prt-radiolist__item"><input type="radio" name="deliverdate-itunes-album" id="anytime-itunes-album" checked="checked"><label for="anytime-itunes-album" class="anytime-itunes-album">いつでもよい(登録次第)</label></li>
+                <li class="prt-radiolist__item"><input type="radio" name="deliverdate-itunes-album" id="set-itunes-album"><label for="set-itunes-album" class="set-itunes-album">希望日を入力</label></li>
+              </ul><!-- .prt-radiolist -->
+            </div>
+          </li>
+          <li class="prt-artisteditlist__item">
+            <div class="prt-artisteditlist__th">amazonプレオーダー<br>予約注文開始日</div>
+            <div class="prt-artisteditlist__td">
+              <ul class="prt-radiolist">
+                <li class="prt-radiolist__item"><input type="radio" name="deliverdate-amazon-album" id="anytime-amazon-album" checked="checked"><label for="anytime-amazon-album" class="anytime-amazon-album">いつでもよい(登録次第)</label></li>
+                <li class="prt-radiolist__item"><input type="radio" name="deliverdate-amazon-album" id="set-amazon-album"><label for="set-amazon-album" class="set-amazon-album">希望日を入力</label></li>
+              </ul><!-- .prt-radiolist -->
+            </div>
+          </li>
+        <li class="prt-artisteditlist__item">
+          <div class="prt-artisteditlist__th">販売希望価格</div>
+          <div class="prt-artisteditlist__td">
+            <div class="prt-artistedit2col">
+              <div class="prt-artistedit2col__col">ハイレゾアルバム</div>
+              <div class="prt-artistedit2col__col">
+                <div class="prt-artisteditflex">
+                  <div class="prt-artisteditflex__item"><input type="text"></div>
+                  <div class="prt-artisteditflex__item">円</div>
+                </div>
+              </div>
+            </div><!-- .prt-artistedit2col -->
+            <div class="prt-artistedit2col">
+              <div class="prt-artistedit2col__col">ハイレゾ5chアルバム</div>
+              <div class="prt-artistedit2col__col">
+                <div class="prt-artisteditflex">
+                  <div class="prt-artisteditflex__item"><input type="text"></div>
+                  <div class="prt-artisteditflex__item">円</div>
+                </div>
+              </div>
+            </div><!-- .prt-artistedit2col -->
+          </div>
+        </li>
+        <li class="prt-artisteditlist__item">
+          <div class="prt-artisteditlist__th">YouTube URL</div>
+          <div class="prt-artisteditlist__td"><input type="text"></div>
+        </li>
+        <li class="prt-artisteditlist__item for-single">
+          <div class="prt-artisteditlist__th">アルバムの配信先</div>
+          <div class="prt-artisteditlist__td">
+            <ul class="prt-partnerlist">
+              <li class="prt-partnerlist__item"><input type="checkbox"><label for="">24-7</label></li>
+              <li class="prt-partnerlist__item"><input type="checkbox"><label for="">7digital</label></li>
+              <li class="prt-partnerlist__item"><input type="checkbox"><label for="">Akazoo</label></li>
+              <li class="prt-partnerlist__item"><input type="checkbox"><label for="">Amazon Music</label></li>
+              <li class="prt-partnerlist__item"><input type="checkbox"><label for="">Anghami</label></li>
+              <li class="prt-partnerlist__item"><input type="checkbox"><label for="">AWA</label></li>
+              <li class="prt-partnerlist__item"><input type="checkbox"><label for="">Boomplay</label></li>
+              <li class="prt-partnerlist__item"><input type="checkbox"><label for="">Deezer</label></li>
+              <li class="prt-partnerlist__item"><input type="checkbox"><label for="">Google Music Store</label></li>
+              <li class="prt-partnerlist__item"><input type="checkbox"><label for="">Hungama</label></li>
+              <li class="prt-partnerlist__item"><input type="checkbox"><label for="">iHeartRadio</label></li>
+              <li class="prt-partnerlist__item"><input type="checkbox"><label for="">iMusica</label></li>
+              <li class="prt-partnerlist__item"><input type="checkbox"><label for="">InProdicon</label></li>
+              <li class="prt-partnerlist__item"><input type="checkbox"><label for="">KDigital</label></li>
+              <li class="prt-partnerlist__item"><input type="checkbox"><label for="">KKBox</label></li>
+              <li class="prt-partnerlist__item"><input type="checkbox"><label for="">Kuack</label></li>
+              <li class="prt-partnerlist__item"><input type="checkbox"><label for="">Line Music</label></li>
+              <li class="prt-partnerlist__item"><input type="checkbox"><label for="">MediaNet</label></li>
+              <li class="prt-partnerlist__item"><input type="checkbox"><label for="">Napster</label></li>
+              <li class="prt-partnerlist__item"><input type="checkbox"><label for="">NetEase Cloud Music</label></li>
+              <li class="prt-partnerlist__item"><input type="checkbox"><label for="">Pandora</label></li>
+              <li class="prt-partnerlist__item"><input type="checkbox"><label for="">Qobuz</label></li>
+              <li class="prt-partnerlist__item"><input type="checkbox"><label for="">Resso</label></li>
+              <li class="prt-partnerlist__item"><input type="checkbox"><label for="">Saavn</label></li>
+              <li class="prt-partnerlist__item"><input type="checkbox"><label for="">Shazam</label></li>
+              <li class="prt-partnerlist__item"><input type="checkbox"><label for="">Slacker Radio</label></li>
+              <li class="prt-partnerlist__item"><input type="checkbox"><label for="">SoundExchange</label></li>
+              <li class="prt-partnerlist__item"><input type="checkbox"><label for="">Spotify</label></li>
+              <li class="prt-partnerlist__item"><input type="checkbox"><label for="">Tencent Music Entertainment (TME)</label></li>
+              <li class="prt-partnerlist__item"><input type="checkbox"><label for="">Tidal</label></li>
+              <li class="prt-partnerlist__item"><input type="checkbox"><label for="">TikTok</label></li>
+              <li class="prt-partnerlist__item"><input type="checkbox"><label for="">United Media Agency (UMA)</label></li>
+              <li class="prt-partnerlist__item"><input type="checkbox"><label for="">Xiami Music</label></li>
+              <li class="prt-partnerlist__item"><input type="checkbox"><label for="">Yandex</label></li>
+              <li class="prt-partnerlist__item"><input type="checkbox"><label for="">YouTube Music</label></li>
+            </ul>
+          </div>
+        </li>
+        <li class="prt-artisteditlist__item for-single">
+          <div class="prt-artisteditlist__th">YouTube配信</div>
+          <div class="prt-artisteditlist__td">
+            <ul class="prt-checkboxlist prt-checkboxlist--center">
+              <li class="prt-checkboxlist__item"><input type="checkbox" id="youtubedeliver" checked="checked"><label for="youtubedeliver">Yes</label></li>
+            </ul><!-- .prt-checkboxlist -->
+          </div>
+        </li>
+      </ul><!-- .prt-artisteditlist -->
+      <ul class="prt-artisteditlist prt-artisteditlist--mt4rem">
+        <li class="prt-artisteditlist__item">
+          <div class="prt-artisteditlist__th">アルバムに含まれる曲</div>
+          <div class="prt-artisteditlist__td">
+            <ul class="prt-albumsonglist">
+              <li class="prt-albumsonglist__item"><span class="prt-albumsonglist__num">01</span>曲名が入る<a href="javascript:void(0)" class="prt-albumsonglist__close">×</a></li>
+              <li class="prt-albumsonglist__item"><span class="prt-albumsonglist__num">02</span>曲名が入る<a href="javascript:void(0)" class="prt-albumsonglist__close">×</a></li>
+              <li class="prt-albumsonglist__item"><span class="prt-albumsonglist__num">03</span>曲名が入る<a href="javascript:void(0)" class="prt-albumsonglist__close">×</a></li>
+              <li class="prt-albumsonglist__item"><span class="prt-albumsonglist__num">04</span>曲名が入る<a href="javascript:void(0)" class="prt-albumsonglist__close">×</a></li>
+              <li class="prt-albumsonglist__item"><span class="prt-albumsonglist__num">05</span>曲名が入る<a href="javascript:void(0)" class="prt-albumsonglist__close">×</a></li>
+              <li class="prt-albumsonglist__item"><span class="prt-albumsonglist__num">06</span>曲名が入る<a href="javascript:void(0)" class="prt-albumsonglist__close">×</a></li>
+              <li class="prt-albumsonglist__item"><span class="prt-albumsonglist__num">07</span>曲名が入る<a href="javascript:void(0)" class="prt-albumsonglist__close">×</a></li>
+            </ul><!-- .prt-albumsonglist -->
+            <div class="prt-framebtn prt-framebtn--mt2rem"><a href="#">＋　曲を追加する</a></div>
+          </div>
+        </li>
+      </ul><!-- .prt-artisteditlist -->
+    </div>
+  </div><!-- .area-newsong -->
+  
+  <div class="prt-signboxbnrs">
+    <div class="prt-signboxbnrs__item"><a href="./dashboard.html" id="registsubmit">
+      保存し配信を開始する
+    </a></div>
+  </div><!-- .prt-signboxbnrs -->
+</div><!-- .area-contentbox -->
+
+<div class="area-saveinmiddle none"><a href="#">途中で保存する</a></div>
+
+</div><!-- .area-all -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+  var artistitem = $('.prt-artistlist__item > a');
+  artistitem.on('click', function(){
+    $(this).next().slideToggle();
+    artistitem.toggleClass('pushed');
+  });
+
+  var registsubmit = $('#registsubmit');
+  $('.prt-checkboxlist input').on('click', function(){
+    if($('#menu-single').prop('checked') == true) {
+      $('.for-single').removeClass('none');
+      $('.for-album').addClass('none');
+      registsubmit.text('保存し配信を開始する');
+    }
+    if($('#menu-album, .menu-album').prop('checked') == true) {
+      $('.for-album').removeClass('none');
+      $('.for-single').addClass('none');
+      registsubmit.text('アルバム登録・編集画面へ');
+    }
+    if($('#menu-both').prop('checked') == true) {
+      $('.for-album, .for-single').removeClass('none');
+      registsubmit.text('アルバム登録・編集画面へ');
+    }
+  });
+
+  $('#openmore').on('click', function(){
+    $("#moreinput-songlist").slideToggle();
+    $('#openmore-visible').css('display', 'block');
+    $('#openmore').addClass('none');
+  });
+
+  $('#openmore-package-single').on('click', function(){
+    $('#area-morepackage-single').slideToggle();
+    $('#openmore-package-single').addClass('none');
+  });
+
+  $('#openmore-package-album').on('click', function(){
+    $('#area-morepackage-album').slideToggle();
+    $('#openmore-package-album').addClass('none');
+  });
+
+  // $('#openmore-package').on('click', function(){
+  //   $("#moreinput-songpackage").slideToggle();
+  //   $('#openmore-package').addClass('none');
+  // });
+
+  $('.prt-releasetype input').on('click', function(){
+    $('#singleinputlist').css('display', 'block');
+  });
+
+
+
+});
+</script>
+</body>
+</html>

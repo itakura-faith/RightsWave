@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>特定商取引法に基づく表示</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="area-all area-login">
+
+<div class="prt-signstep">
+  <div class="prt-signstep__item prt-signstep__item--current"><span>ユーザー登録</span></div>
+  <div class="prt-signstep__item"><span>アーティスト登録</span></div>
+  <div class="prt-signstep__item"><span>楽曲登録</span></div>
+  <div class="prt-signstep__item"><span>著作者登録</span></div>
+</div><!-- .prt-signstep -->
+
+<header class="area-header area-header--login">
+  <h1 class="area-header__logo">
+    <a href="#"><img src="./images/logo.svg" alt=""></a>
+  </h1>
+  <ul class="prt-headermenu">
+    <li class="prt-headermenu__item">
+      <a href="#">My Artists &amp; Release</a>
+      <ul class="prt-headerchildmenu">
+        <li class="prt-headerchildmenu__item"><a href="./regist_artist.html">アーティストの追加・編集</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./regist_song.html">楽曲の追加・編集</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./regist_author.html">著作権情報の登録依頼</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./regist_author_song.html">著作権登録楽曲の表示</a></li>
+      </ul><!-- .prt-headerchildmenu -->
+    </li>
+    <li class="prt-headermenu__item"><a href="#">Promotion</a></li>
+    <li class="prt-headermenu__item"><a href="#">Report</a></li>
+    <li class="prt-headermenu__item">
+      <a href="#">Cashing</a>
+      <ul class="prt-headerchildmenu">
+        <li class="prt-headerchildmenu__item"><a href="./cashing_choose_pay.html">支払い方法登録</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./cashing_payment_application.html">支払い請求</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./cashing_sprit.html">スプリット設定</a></li>
+      </ul><!-- .prt-headerchildmenu -->
+    </li>
+    <li class="prt-headermenu__item">
+      <a href="#">Support</a>
+      <ul class="prt-headerchildmenu">
+        <li class="prt-headerchildmenu__item"><a href="./support_faq.html">FAQ</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./support_contact.html">お問い合わせ</a></li>
+      </ul><!-- .prt-headerchildmenu -->
+    </li>
+    <li class="prt-headermenu__item"><a href="./account.html">Account</a></li>
+    <li class="prt-headermenu__item white"><a href="#">Josh</a></li>
+  </ul><!-- .prt-headermenu -->
+</header><!-- .area-header -->
+
+<div class="area-contentbox">
+  <h2 class="area-contentbox__h">特定商取引法に基づく表示</h2>
+
+
+  <div class="area-contentbox__content">
+    <ul class="prt-signlist">
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">販売業者</div>
+        <div class="prt-signlist__td">株式会社フェイス</br>〒107-0062</br>東京都港区南青山6-10-12フェイス南青山ビル</div>
+      </li>
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">運営責任者</div>
+        <div class="prt-signlist__td">株行会社フェイス 執行役員 山下　雄史</div>
+      </li>
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">お問合せ連絡先</div>
+        <div class="prt-signlist__td">お問合せフォームからご連絡ください</div>
+      </li>
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">販売価格</div>
+        <div class="prt-signlist__td">お申込みのプラン・コースごとに掲載</div>
+      </li>
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">お支払い方法</div>
+        <div class="prt-signlist__td">クレジットカード、コンビニ決済、PayPay</div>
+      </li>
+      <li class="prt-signlist__item">
+        <div class="prt-signlist__th">返品条件</div>
+        <div class="prt-signlist__td">返品・交換は致しかねます</div>
+      </li>
+
+  </div>
+</div><!-- .area-sign -->
+
+</div><!-- .area-all -->
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $('.prt-radiolist--author-user input').on('click', function(){
+    if($('#author_user01').prop('checked') == true) {
+      $('.only-user').removeClass('none');
+      $('.not-user').addClass('none');
+    }
+    if($('#author_user02').prop('checked') == true) {
+      $('.not-user').removeClass('none');
+      $('.only-user').addClass('none');
+    }
+  });
+</script>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ｜Rightswave</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="area-all area-login">
+
+  <div class="prt-signstep">
+    <div class="prt-signstep__item"><span>ユーザー登録</span></div>
+    <div class="prt-signstep__item prt-signstep__item--current"><span>アーティスト登録</span></div>
+    <div class="prt-signstep__item"><span>楽曲登録</span></div>
+    <div class="prt-signstep__item"><span>著作者登録</span></div>
+  </div><!-- .prt-signstep -->
+
+<div class="area-contentbox">
+  <h2 class="area-contentbox__h">お問い合わせ</h2>
+  <p class="area-contentbox__caption">
+    よくあるご質問は<a href="./support_faq.html">こちら</a>からご覧いただけます。<br>
+    以下のメールフォームからお問い合わせください。
+  </p>
+
+  <ul class="prt-artisteditlist">
+    <li class="prt-artisteditlist__item">
+      <div class="prt-artisteditlist__th">氏名</div>
+      <div class="prt-artisteditlist__td"><input type="text"></div>
+    </li>
+    <li class="prt-artisteditlist__item">
+      <div class="prt-artisteditlist__th">法人名</div>
+      <div class="prt-artisteditlist__td"><input type="text"></div>
+    </li>
+    <li class="prt-artisteditlist__item">
+      <div class="prt-artisteditlist__th">RightsWaveユーザー名</div>
+      <div class="prt-artisteditlist__td"><input type="text"></div>
+    </li>
+    <li class="prt-artisteditlist__item">
+      <div class="prt-artisteditlist__th">お問い合わせの種別</div>
+      <div class="prt-artisteditlist__td">
+        <label for="support_contact_type" class="prt-artisteditlist__pd">
+          <select name="" id="support_contact_type">
+            <option value="artist00">アカウントについて</option>
+            <option value="artist01">楽曲配信について</option>
+            <option value="artist02">著作権について</option>
+            <option value="artist03">その他</option>
+          </select>
+        </label>
+      </div>
+    </li>
+    <li class="prt-artisteditlist__item">
+      <div class="prt-artisteditlist__th">お問い合わせの内容</div>
+      <div class="prt-artisteditlist__td">
+        <textarea></textarea>
+      </div>
+    </li>
+  </ul><!-- .prt-artisteditlist -->
+
+  <div class="prt-signboxbnrs">
+    <!-- <div class="prt-signboxbnrs__item prt-signboxbnrs__item--white"><a href="./signup_thanks.html">戻る</a></div> -->
+    <div class="prt-signboxbnrs__item"><a href="./support_contact_confirm.html">内容を確認する</a></div>
+  </div><!-- .prt-signboxbnrs -->
+
+</div><!-- .area-contentbox -->
+
+</div><!-- .area-all -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+  var artistitem = $('.prt-artistlist__item > a');
+  artistitem.on('click', function(){
+    $(this).next().slideToggle();
+    artistitem.toggleClass('pushed');
+  });
+
+  $('#openmore').on('click', function(){
+    $("#moreinput-artistlist").slideToggle();
+    $('#openmore-visible').css('display', 'block');
+  });
+
+});
+</script>
+</body>
+</html>

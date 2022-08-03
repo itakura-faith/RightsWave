@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新規登録 - アーティスト情報の登録｜Rightswave</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="area-all area-login">
+
+  <div class="prt-signstep">
+    <div class="prt-signstep__item"><span>ユーザー登録</span></div>
+    <div class="prt-signstep__item prt-signstep__item--current"><span>アーティスト登録</span></div>
+    <div class="prt-signstep__item"><span>楽曲登録</span></div>
+    <div class="prt-signstep__item"><span>著作者登録</span></div>
+  </div><!-- .prt-signstep -->
+
+<header class="area-header area-header--login">
+  <h1 class="area-header__logo">
+    <a href="#"><img src="./images/logo.svg" alt=""></a>
+    <span class="area-header__logo__sm">by Rightsscale, Inc.</span>
+  </h1>
+  <ul class="prt-headermenu">
+    <li class="prt-headermenu__item">
+      <a href="#">My Artists &amp; Release</a>
+      <ul class="prt-headerchildmenu">
+        <li class="prt-headerchildmenu__item"><a href="./regist_artist.html">アーティストの追加・編集</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./regist_song.html">楽曲の追加・編集</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./regist_author.html">著作権情報の登録依頼</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./regist_author_song.html">著作権登録楽曲の表示</a></li>
+      </ul><!-- .prt-headerchildmenu -->
+    </li>
+    <li class="prt-headermenu__item"><a href="#">Promotion</a></li>
+    <li class="prt-headermenu__item"><a href="#">Report</a></li>
+    <li class="prt-headermenu__item">
+      <a href="#">Cashing</a>
+      <ul class="prt-headerchildmenu">
+        <li class="prt-headerchildmenu__item"><a href="./cashing_choose_pay.html">支払い方法登録</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./cashing_payment_application.html">支払い請求</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./cashing_sprit.html">スプリット設定</a></li>
+      </ul><!-- .prt-headerchildmenu -->
+    </li>
+    <li class="prt-headermenu__item">
+      <a href="#">Support</a>
+      <ul class="prt-headerchildmenu">
+        <li class="prt-headerchildmenu__item"><a href="./support_faq.html">FAQ</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./support_contact.html">お問い合わせ</a></li>
+      </ul><!-- .prt-headerchildmenu -->
+    </li>
+    <li class="prt-headermenu__item"><a href="./account.html">Account</a></li>
+    <li class="prt-headermenu__item white"><a href="#">Josh</a></li>
+  </ul><!-- .prt-headermenu -->
+</header><!-- .area-header -->
+
+  <div class="area-report">
+    <h2 class="area-report__h">REPORT</h2>
+    <ul class="prt-reporttab">
+      <li class="prt-reporttab__item prt-reporttab__item--current">配信関連</li>
+      <li class="prt-reporttab__item">著作権関連</li>
+      <li class="prt-reporttab__item">全体</li>
+      <li class="prt-reporttab__item">各種レポート</li>
+    </ul><!-- .prt-reporttab -->
+    <ul class="prt-reportcategory">
+      <li class="prt-reportcategory__item prt-reportcategory__item--on">
+        <h3 class="prt-reportcategory__h">配信関連</h3>
+        <ul class="prt-reportlist">
+          <li class="prt-reportlist__item">
+            <div class="prt-reportlist__index">
+              <h4 class="prt-reportlist__h">Top Songs</h4>
+              <p class="prt-reportlist__caption">再生回数の上位XX曲の比率です。</p>
+            </div>
+            <div class="area-reportview">
+              <div class="area-reportview__flexbox">
+                <label for="reportpd_chart-dialy" class="prt-reportpd">
+                  <select name="reportpd_chart-dialy" id="reportpd_chart-dialy">
+                    <option value="total">Total</option>
+                    <option value="2021-total">2021年分</option>
+                    <option value="2021-12">2021年12月</option>
+                    <option value="2021-11">2021年11月</option>
+                    <option value="2021-10">2021年10月</option>
+                    <option value="2021-09">2021年9月</option>
+                    <option value="2021-08">2021年8月</option>
+                    <option value="2021-07">2021年7月</option>
+                    <option value="2021-06">2021年6月</option>
+                    <option value="2021-05">2021年5月</option>
+                    <option value="2021-04">2021年4月</option>
+                    <option value="2021-03">2021年3月</option>
+                    <option value="2021-02">2021年2月</option>
+                    <option value="2021-01">2021年1月</option>
+                    <option value="2020-total">2020年分</option>
+                    <option value="2020-12">2020年12月</option>
+                    <option value="2020-11">2020年11月</option>
+                    <option value="2020-10">2020年10月</option>
+                    <option value="2020-09">2020年9月</option>
+                    <option value="2020-08">2020年8月</option>
+                    <option value="2020-07">2020年7月</option>
+                    <option value="2020-06">2020年6月</option>
+                    <option value="2020-05">2020年5月</option>
+                    <option value="2020-04">2020年4月</option>
+                    <option value="2020-03">2020年3月</option>
+                    <option value="2020-02">2020年2月</option>
+                    <option value="2020-01">2020年1月</option>
+                  </select>
+                </label>
+              </div>
+              <div class="area-reportview__wrap">
+                <canvas class="prt-chart" id="chart-topsongs-monthly" width="400" height="400"></canvas>
+                <!-- <div class="area-reportview__2col">
+                  <div class="area-reportview__2col__col"><canvas class="prt-chart" id="chart-topsongs-monthly" width="400" height="400"></canvas></div>
+                  <div class="area-reportview__2col__col"><canvas class="prt-chart" id="chart-topsongs-year" width="400" height="400"></canvas></div>
+                </div> -->
+              </div>
+            </div><!-- .area-reportview -->
+          </li>
+          <li class="prt-reportlist__item">
+            <div class="prt-reportlist__index">
+              <h4 class="prt-reportlist__h">デイリー再生数</h4>
+              <p class="prt-reportlist__caption">過去30日間の楽曲再生数の推移です。上位XX曲以外は楽曲を指定するか、ダウンロードレポートで確認してください。</p>
+            </div>
+            <div class="area-reportview">
+              <div class="area-reportview__flexbox">
+                <label for="reportpd_chart-dialy" class="prt-reportpd">
+                  <select name="reportpd_chart-dialy" id="reportpd_chart-dialy">
+                    <option value="all">Total</option>
+                    <option value="song_a">songA</option>
+                    <option value="song_b">songB</option>
+                    <option value="song_c">songC</option>
+                    <option value="song_d">songD</option>
+                    <option value="song_e">songE</option>
+                  </select>
+                </label>
+              </div>
+              <div class="area-reportview__wrap">
+                <canvas class="prt-chart" id="chart-daily" width="400" height="400"></canvas>
+              </div>
+            </div><!-- .area-reportview -->
+          </li>
+          <li class="prt-reportlist__item">
+            <div class="prt-reportlist__index">
+              <h4 class="prt-reportlist__h">楽曲売上(確定値)推移</h4>
+              <p class="prt-reportlist__caption">1ヶ月ごとの楽曲配信売上の推移です。</p>
+            </div>
+            <div class="area-reportview">
+              <div class="area-reportview__flexbox">
+                <label for="reportpd_chart-dialy" class="prt-reportpd">
+                  <select name="reportpd_chart-dialy" id="reportpd_chart-dialy">
+                    <option value="all">Total</option>
+                    <option value="song_a">songA</option>
+                    <option value="song_b">songB</option>
+                    <option value="song_c">songC</option>
+                  </select>
+                </label>
+                <ul class="prt-radiolist">
+                  <li class="prt-radiolist__item"><input type="radio" name="chart-dialy-period" id="chart-dialy-period-6month" checked="checked"><label for="chart-dialy-period-6month" class="chart-dialy-period-6month">6 months</label></li>
+                  <li class="prt-radiolist__item"><input type="radio" name="chart-dialy-period" id="chart-dialy-period-1year"><label for="chart-dialy-period-1year" class="chart-dialy-period-1year">1 year</label></li>
+                </ul><!-- .prt-radiolist -->
+              </div>
+              <div class="area-reportview__wrap">
+                <canvas class="prt-chart" id="chart-sales-songs" width="300" height="300"></canvas>
+              </div>
+            </div><!-- .area-reportview -->
+          </li>
+          <li class="prt-reportlist__item">
+            <div class="prt-reportlist__index">
+              <h4 class="prt-reportlist__h">国別(売上)推移</h4>
+              <p class="prt-reportlist__caption">国別の再生回数の推移です。</p>
+            </div>
+            <div class="area-reportview">
+              <div class="area-reportview__flexbox">
+                <label for="reportpd_chart-country" class="prt-reportpd">
+                  <select name="reportpd_chart-country" id="reportpd_chart-country">
+                    <option value="all">Total</option>
+                    <option value="song_a">songA</option>
+                    <option value="song_b">songB</option>
+                    <option value="song_c">songC</option>
+                  </select>
+                </label>
+                <ul class="prt-radiolist">
+                  <li class="prt-radiolist__item"><input type="radio" name="chart-country-period" id="chart-country-period-6month" checked="checked"><label for="chart-country-period-6month" class="chart-country-period-6month">6 months</label></li>
+                  <li class="prt-radiolist__item"><input type="radio" name="chart-country-period" id="chart-country-period-1year"><label for="chart-country-period-1year" class="chart-country-period-1year">1 year</label></li>
+                </ul><!-- .prt-radiolist -->
+              </div>
+              <div class="area-reportview__wrap">
+                <canvas class="prt-chart" id="chart-sales-country"></canvas>
+              </div>
+            </div><!-- .area-reportview -->
+          </li>
+          <li class="prt-reportlist__item">
+            <div class="prt-reportlist__index">
+              <h4 class="prt-reportlist__h">DSP比率</h4>
+              <p class="prt-reportlist__caption">売り上げに占める、各配信サービスの比率です。各配信サービスで1再生あたりの推定収入も確認できます。</p>
+            </div>
+            <div class="area-reportview">
+              <div class="area-reportview__wrap">
+                <canvas class="prt-chart" id="chart-dsp"></canvas>
+              </div>
+            </div><!-- .area-reportview -->
+          </li>
+        </ul><!-- .prt-reportlist -->
+      </li>
+      <li class="prt-reportcategory__item">
+        <h3 class="prt-reportcategory__h">著作権関連</h3>
+        <ul class="prt-reportlist">
+          <li class="prt-reportlist__item">
+            <div class="prt-reportlist__index">
+              <h4 class="prt-reportlist__h">直近2年間の著作権収入の推移です。</h4>
+              <p class="prt-reportlist__caption">区分については、ダウンロード版レポートに記載してあります。</p>
+            </div>
+            <div class="area-reportview">
+              <div class="area-reportview__flexbox" style="display: none">
+                <label for="reportpd_chart-copyright_quater" class="prt-reportpd">
+                  <select name="reportpd_chart-copyright_quater" id="reportpd_chart-copyright_quater">
+                    <option value="2020-01-03">2020年1月~3月</option>
+                    <option value="2020-04-06">2020年4月~6月</option>
+                    <option value="2020-07-09">2020年7月~9月</option>
+                    <option value="2020-10-12">2020年10月~12月</option>
+                    <option value="2021-01-03">2021年1月~3月</option>
+                    <option value="2021-04-06">2021年4月~6月</option>
+                    <option value="2021-07-09">2021年7月~9月</option>
+                    <option value="2021-10-12">2021年10月~12月</option>
+                  </select>
+                </label>
+                <label for="reportpd_chart-copyright_year" class="prt-reportpd none">
+                  <select name="reportpd_chart-copyright_year" id="reportpd_chart-copyright_year">
+                    <option value="2020">2020年</option>
+                    <option value="2021">2021年</option>
+                  </select>
+                </label>
+                <ul class="prt-radiolist">
+                  <li class="prt-radiolist__item"><input type="radio" name="chart-copyright" id="chart-copyright-quater" checked="checked"><label for="chart-copyright-quater" class="chart-copyright-quater">quater</label></li>
+                  <li class="prt-radiolist__item"><input type="radio" name="chart-copyright" id="chart-copyright-year"><label for="chart-copyright-year" class="chart-copyright-year">year</label></li>
+                </ul><!-- .prt-radiolist -->
+              </div>
+              <div class="area-reportview__wrap">
+                <canvas class="prt-chart" id="chart-copyright"></canvas>
+              </div>
+            </div><!-- .area-reportview -->
+          </li>
+        </ul><!-- .prt-reportlist -->
+      </li>
+      <li class="prt-reportcategory__item">
+        <h3 class="prt-reportcategory__h">全体</h3>
+        <ul class="prt-reportlist">
+          <li class="prt-reportlist__item">
+            <div class="prt-reportlist__index">
+              <h4 class="prt-reportlist__h">総合収入</h4>
+              <p class="prt-reportlist__caption">配信・著作権を含むトータルの推移です。</p>
+            </div>
+            <div class="area-reportview">
+              <div class="area-reportview__flexbox">
+                <label for="reportpd_chart-total" class="prt-reportpd">
+                  <select name="reportpd_chart-total" id="reportpd_chart-total">
+                    <option value="total">Total</option>
+                    <option value="song_a">songA</option>
+                    <option value="song_b">songB</option>
+                    <option value="song_c">songC</option>
+                  </select>
+                </label>
+                <ul class="prt-radiolist">
+                  <li class="prt-radiolist__item"><input type="radio" name="chart-total-period" id="chart-total-period-6month" value="6month"><label for="chart-total-period-6month" class="chart-total-period-6month">6ヶ月</label></li>
+                  <li class="prt-radiolist__item"><input type="radio" name="chart-total-period" id="chart-total-period-1year" checked="checked" value="1year"><label for="chart-total-period-1year" class="chart-total-period-1year">1年</label></li>
+                </ul><!-- .prt-radiolist -->
+              </div>
+              <div class="area-reportview__wrap">
+                <canvas class="prt-chart prt-chart-total" id="chart-total"></canvas>
+                <canvas class="prt-chart prt-chart-total none" id="chart-total-song_a-1year"></canvas>
+                <canvas class="prt-chart prt-chart-total none" id="chart-total-song_b-1year"></canvas>
+                <canvas class="prt-chart prt-chart-total none" id="chart-total-song_c-1year"></canvas>
+                <canvas class="prt-chart prt-chart-total none" id="chart-total-6month"></canvas>
+                <canvas class="prt-chart prt-chart-total none" id="chart-total-song_a-6month"></canvas>
+                <canvas class="prt-chart prt-chart-total none" id="chart-total-song_b-6month"></canvas>
+                <canvas class="prt-chart prt-chart-total none" id="chart-total-song_c-6month"></canvas>
+              </div>
+            </div><!-- .area-reportview -->
+          </li>
+          <li class="prt-reportlist__item">
+            <div class="prt-reportlist__index">
+              <h4 class="prt-reportlist__h">楽曲ごと収入ランキング</h4>
+              <p class="prt-reportlist__caption">リリース以来、各曲がもたらした収入です
+              。</p>
+            </div>
+            <ul class="prt-songtotalsales">
+              <li class="prt-songtotalsales__item">
+                <div class="prt-songtotalsales__th">Song 01</div>
+                <div class="prt-songtotalsales__td">￥81,682</div>
+              </li>
+              <li class="prt-songtotalsales__item">
+                <div class="prt-songtotalsales__th">Song 02</div>
+                <div class="prt-songtotalsales__td">￥57,158</div>
+              </li>
+              <li class="prt-songtotalsales__item">
+                <div class="prt-songtotalsales__th">Song 03 test</div>
+                <div class="prt-songtotalsales__td">￥31,946</div>
+              </li>
+              <li class="prt-songtotalsales__item">
+                <div class="prt-songtotalsales__th">Song 04 aaaaa</div>
+                <div class="prt-songtotalsales__td">￥70,663</div>
+              </li>
+            </ul><!-- .prt-songtotalsales -->
+          </li>
+          <li class="prt-reportlist__item">
+            <div class="prt-reportlist__index">
+              <h4 class="prt-reportlist__h">楽曲ごと再生数ランキング</h4>
+              <p class="prt-reportlist__caption">リリース以来、各曲の再生数です
+              。</p>
+            </div>
+            <ul class="prt-songtotalsales">
+              <li class="prt-songtotalsales__item">
+                <div class="prt-songtotalsales__th">Song 01</div>
+                <div class="prt-songtotalsales__td">81,682 再生</div>
+              </li>
+              <li class="prt-songtotalsales__item">
+                <div class="prt-songtotalsales__th">Song 02</div>
+                <div class="prt-songtotalsales__td">57,158 再生</div>
+              </li>
+              <li class="prt-songtotalsales__item">
+                <div class="prt-songtotalsales__th">Song 03 test</div>
+                <div class="prt-songtotalsales__td">31,946 再生</div>
+              </li>
+              <li class="prt-songtotalsales__item">
+                <div class="prt-songtotalsales__th">Song 04 aaaaa</div>
+                <div class="prt-songtotalsales__td">70,663 再生</div>
+              </li>
+            </ul><!-- .prt-songtotalsales -->
+          </li>
+        </ul><!-- .prt-reportlist -->
+      </li>
+      <li class="prt-reportcategory__item">
+        <h3 class="prt-reportcategory__h">各種レポート</h3>
+        <ul class="prt-reportlist">
+          <li class="prt-reportlist__item">
+            <div class="prt-reportlist__index">
+              <h4 class="prt-reportlist__h">各売り上げ、再生回数などのレポートのダウンロードが可能です。</h4>
+              <p class="prt-reportlist__caption">配信・著作権を含むトータルの推移です。</p>
+            </div>
+            <ul class="prt-reportdllist">
+              <li class="prt-reportdllist__item">
+                <div class="prt-reportdllist__h">▼2021</div>
+                <ul class="prt-reportdllinklist">
+                  <li class="prt-reportdllinklist__item">総合レポート：　<a href="#">1-3月</a><a href="#">4-6月</a><a href="#">7-9月</a><a href="#">10-12月</a></li>
+                  <li class="prt-reportdllinklist__item">配信レポート：　<a href="#">1月</a><a href="#">2月</a><a href="#">3月</a><a href="#">4月</a><a href="#">5月</a><a href="#">6月</a><a href="#">7月</a><a href="#">8月</a><a href="#">9月</a><a href="#">10月</a><a href="#">11月</a><a href="#">12月</a></li>
+                </ul><!-- .prt-reportdllinklist -->
+              </li>
+              <li class="prt-reportdllist__item">
+                <div class="prt-reportdllist__h">▼2020</div>
+                <ul class="prt-reportdllinklist">
+                  <li class="prt-reportdllinklist__item">総合レポート：　<a href="#">1-3月</a><a href="#">4-6月</a><a href="#">7-9月</a><a href="#">10-12月</a></li>
+                  <li class="prt-reportdllinklist__item">配信レポート：　<a href="#">1月</a><a href="#">2月</a><a href="#">3月</a><a href="#">4月</a><a href="#">5月</a><a href="#">6月</a><a href="#">7月</a><a href="#">8月</a><a href="#">9月</a><a href="#">10月</a><a href="#">11月</a><a href="#">12月</a></li>
+                </ul><!-- .prt-reportdllinklist -->
+              </li>
+            </ul><!-- .prt-reportdllist -->
+          </li>
+        </ul><!-- .prt-reportlist -->
+      </li>
+    </ul><!-- .prt-reportcategory -->
+  </div><!-- .area-report -->
+
+
+</div><!-- .area-all -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
+
+<script src="./js/chart-total.js"></script>
+<script>
+
+
+$(function(){
+  var artistitem = $('.prt-artistlist__item > a');
+  artistitem.on('click', function(){
+    $(this).next().slideToggle();
+    artistitem.toggleClass('pushed');
+  });
+
+  $('#openmore').on('click', function(){
+    $("#moreinput-artistlist").slideToggle();
+    $('#openmore-visible').css('display', 'block');
+  });
+
+});
+
+
+var ctx = document.getElementById("chart-topsongs-monthly").getContext('2d');
+// ctx.canvas.height = 300;
+var myPieChart = new Chart(ctx, {
+  type: 'pie',
+  data: {
+    labels: ["song01", "song02", "song03"], //データ項目のラベル
+    datasets: [{
+        backgroundColor: [
+            "rgba(60, 60, 255, 1)",
+            "rgba(60, 255, 60, 1)",
+            "rgba(255, 60, 60, 1)"
+        ],
+        data: [45, 32, 18], //グラフのデータ
+        borderWidth: 0
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      //グラフタイトル
+      text: ''
+    }
+  }
+});
+
+var ctx = document.getElementById("chart-topsongs-year");
+var myPieChart = new Chart(ctx, {
+  type: 'pie',
+  data: {
+    labels: ["song01", "song02", "song03"], //データ項目のラベル
+    datasets: [{
+        backgroundColor: [
+            "rgba(60, 60, 255, 1)",
+            "rgba(60, 255, 60, 1)",
+            "rgba(255, 60, 60, 1)"
+        ],
+        data: [45, 32, 18], //グラフのデータ
+        borderWidth: 0 //グラフのデータ
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      //グラフタイトル
+      text: ''
+    }
+  }
+});
+
+
+var ctx = document.getElementById('chart-daily').getContext('2d');
+// ctx.canvas.height = 300;
+var data = {
+    labels: ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月"],
+    datasets: [{
+        label: 'song01',
+        data: [520, 530, 480, 480, 510, 450, 420, 380, 430],
+        backgroundColor: "rgba(60, 60, 255, 1)",
+        borderColor: 'rgba(60, 60, 255, 1)',
+        lineTension: 0,
+        fill: false,
+        borderWidth: 3
+    },{
+        label: 'song02',
+        data: [420, 330, 400, 280, 310, 450, 500, 420, 630],
+        backgroundColor: "rgba(60, 255, 60, 1)",
+        borderColor: 'rgba(60, 255, 60, 1)',
+        lineTension: 0,
+        fill: false,
+        borderWidth: 3
+    },{
+        label: 'song03',
+        data: [680, 740, 900, 520, 630, 480, 500, 520, 730],
+        backgroundColor: "rgba(255, 60, 60, 1)",
+        borderColor: 'rgba(255, 60, 60, 1)',
+        lineTension: 0,
+        fill: false,
+        borderWidth: 3
+    }]
+};
+var options = {
+    scales: {
+        yAxes: [{
+            ticks: {
+                min: 300
+                //beginAtZero: true
+            }
+        }]
+    }
+};
+var ex_chart = new Chart(ctx, {
+    type: 'line',
+    data: data,
+    options: {
+      responsive: true,
+      maintainAspectRatio: false
+    }
+});
+
+
+var ctx = document.getElementById('chart-dsp').getContext('2d');
+// ctx.canvas.height = 300;
+var data = {
+    labels: ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月"],
+    datasets: [{
+        label: 'spotify',
+        data: [52, 53, 48, 48, 51, 45, 42, 38, 43],
+        backgroundColor: "rgba(10, 10, 255, 1)",
+        borderColor: 'rgba(10, 10, 255, 1)',
+        lineTension: 0,
+        fill: false,
+        borderWidth: 3
+    },{
+        label: 'Apple Music',
+        data: [42, 33, 40, 28, 31, 45, 50, 42, 63],
+        backgroundColor: "rgba(10, 255, 10, 1)",
+        borderColor: 'rgba(10, 255, 10, 1)',
+        lineTension: 0,
+        fill: false,
+        borderWidth: 3
+    },{
+        label: 'YouTube Music',
+        data: [68, 74, 90, 52, 63, 48, 50, 52, 73],
+        backgroundColor: "rgba(255, 60, 60, 1)",
+        borderColor: 'rgba(255, 60, 60, 1)',
+        lineTension: 0,
+        fill: false,
+        borderWidth: 3
+    }]
+};
+var options = {
+    scales: {
+        yAxes: [{
+            ticks: {
+                min: 300
+                //beginAtZero: true
+            }
+        }]
+    }
+};
+var ex_chart = new Chart(ctx, {
+    type: 'line',
+    data: data,
+    options: {
+      responsive: true,
+      maintainAspectRatio: false
+    }
+});
+
+
+var ctx = document.getElementById("chart-sales-songs").getContext('2d');
+ctx.height = 300;
+var myChart = new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels:  ["4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
+      datasets: [
+        {
+          label: "song01",
+          data: [10, 9, 5, 15, 10, 9, 7, 11, 8],
+          backgroundColor: "rgba(60, 60, 255, 1)"
+        },
+        {
+          label: "song02",
+          data: [5, 7, 6, 5, 8, 6, 3, 5, 7],
+          backgroundColor: "rgba(60, 255, 60, 1)"
+        },
+        {
+          label: "song03",
+          data: [8, 6, 3, 5, 7, 5, 7, 6, 5],
+          backgroundColor: "rgba(255, 60, 60, 1)"
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      title: {
+        display: true,
+        fontSize: 20,
+        text: "積上げ棒グラフ"
+      },
+      legend: {
+        position: 'bottom'
+      },            
+      scales: {
+        x: {
+          stacked: true,
+        },
+        y: {
+          stacked: true,
+        }
+      }
+    }
+});
+
+var ctx = document.getElementById("chart-sales-country").getContext('2d');
+// ctx.canvas.height = 300;
+var myChart = new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels:  ["4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
+      datasets: [
+        {
+          label: "日本",
+          data: [10, 9, 5, 15, 10, 9, 7, 11, 8],
+          backgroundColor: "rgba(60, 60, 255, 1)"
+        },
+        {
+          label: "アメリカ",
+          data: [5, 7, 6, 5, 8, 6, 3, 5, 7],
+          backgroundColor: "rgba(60, 255, 60, 1)"
+        },
+        {
+          label: "イギリス",
+          data: [8, 6, 3, 5, 7, 5, 7, 6, 5],
+          backgroundColor: "rgba(255, 60, 60, 1)"
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      title: {
+        display: true,
+        fontSize: 20,
+        text: "積上げ棒グラフ"
+      },
+      legend: {
+        position: 'bottom'
+      },            
+      scales: {
+        x: {
+          stacked: true,
+        },
+        y: {
+          stacked: true,
+        }
+      }
+    }
+});
+
+var ctx = document.getElementById("chart-copyright").getContext('2d');
+// ctx.canvas.height = 300;
+var myChart = new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels:  ["2020年4~6月", "2020年7~9月", "2020年10~12月", "2021年1~3月", "2021年4~6月", "2021年7~9月", "2021年10~12月"],
+      datasets: [
+        {
+          label: "song01",
+          data: [10, 9, 5, 15, 10, 9, 7],
+          backgroundColor: "rgba(60, 60, 255, 1)"
+        },
+        {
+          label: "song02",
+          data: [5, 7, 6, 5, 8, 6, 3],
+          backgroundColor: "rgba(60, 255, 60, 1)"
+        },
+        {
+          label: "song03",
+          data: [8, 6, 3, 5, 7, 5, 7],
+          backgroundColor: "rgba(255, 60, 60, 1)"
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      title: {
+        display: true,
+        fontSize: 20,
+        text: "積上げ棒グラフ"
+      },
+      legend: {
+        position: 'bottom'
+      },            
+      scales: {
+        x: {
+          stacked: true,
+        },
+        y: {
+          stacked: true,
+        }
+      }
+    }
+});
+
+
+
+$(function () {
+  var container = $('.area-reportview');
+  var ctx= $('.prt-chart');
+  ctx.attr('width', container.width());
+  ctx.attr('height', 300);
+});
+
+
+$(function() {
+  var tabitem = $('.prt-reporttab__item');
+  var tabitemcurrent = $('.prt-reporttab__item--current');
+  var tabitem01 = $('.prt-reporttab__item:first-child');
+  var tabitem02 = $('.prt-reporttab__item:nth-of-type(2)');
+  var tabitem03 = $('.prt-reporttab__item:nth-of-type(3)');
+  var tabitem04 = $('.prt-reporttab__item:nth-of-type(4)');
+  var reportcategoryitem = $('.prt-reportcategory__item');
+  var reportcategoryitem01 = $('.prt-reportcategory__item:first-child');
+  var reportcategoryitem02 = $('.prt-reportcategory__item:nth-of-type(2)');
+  var reportcategoryitem03 = $('.prt-reportcategory__item:nth-of-type(3)');
+  var reportcategoryitem04 = $('.prt-reportcategory__item:nth-of-type(4)');
+
+  tabitem.on('click', function(){
+    tabitem.removeClass('prt-reporttab__item--current');
+    reportcategoryitem.removeClass('prt-reportcategory__item--on');
+    $(this).addClass('prt-reporttab__item--current');
+  });
+
+  tabitem01.on('click', function(){
+    reportcategoryitem01.addClass('prt-reportcategory__item--on');
+  });
+  tabitem02.on('click', function(){
+    reportcategoryitem02.addClass('prt-reportcategory__item--on');
+  });
+  tabitem03.on('click', function(){
+    reportcategoryitem03.addClass('prt-reportcategory__item--on');
+  });
+  tabitem04.on('click', function(){
+    reportcategoryitem04.addClass('prt-reportcategory__item--on');
+  });
+
+
+});
+
+$(function(){
+  $('#reportpd_chart-total, input[name="chart-total-period"]').change(function(){
+    var radioval = $('input[name="chart-total-period"]:checked').val();
+    var pdval = $('[name="reportpd_chart-total"]').val();
+    var chart = $('.prt-chart-total');
+    if(radioval == '6month' && pdval == 'total') {
+      chart.addClass('none');
+      $('#chart-total-6month').removeClass('none');
+    } else if (radioval == '6month' && pdval == 'song_a') {
+      chart.addClass('none');
+      $('#chart-total-song_a-6month').removeClass('none');
+    } else if (radioval == '6month' && pdval == 'song_b') {
+      chart.addClass('none');
+      $('#chart-total-song_b-6month').removeClass('none');
+    } else if (radioval == '6month' && pdval == 'song_c') {
+      chart.addClass('none');
+      $('#chart-total-song_c-6month').removeClass('none');
+    } else if (radioval == '1year' && pdval == 'total') {
+      chart.addClass('none');
+      $('#chart-total').removeClass('none');
+    }  else if (radioval == '1year' && pdval == 'song_a') {
+      chart.addClass('none');
+      $('#chart-total-song_a-1year').removeClass('none');
+    } else if (radioval == '1year' && pdval == 'song_b') {
+      chart.addClass('none');
+      $('#chart-total-song_b-1year').removeClass('none');
+    } else if (radioval == '1year' && pdval == 'song_c') {
+      chart.addClass('none');
+      $('#chart-total-song_c-1year').removeClass('none');
+    }
+  });
+});
+
+</script>
+</body>
+</html>

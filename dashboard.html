@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ダッシュボード｜Rightswave</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="area-all area-login">
+<header class="area-header area-header--login">
+  <h1 class="area-header__logo">
+    <a href="#"><img src="./images/logo.svg" alt=""></a>
+    <span class="area-header__logo__sm">by Rightsscale, Inc.</span>
+  </h1>
+  <ul class="prt-headermenu">
+    <li class="prt-headermenu__item">
+      <a href="#">My Artists &amp; Release</a>
+      <ul class="prt-headerchildmenu">
+        <li class="prt-headerchildmenu__item"><a href="./regist_artist.html">アーティストの追加・編集</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./regist_song.html">楽曲の追加・編集</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./regist_author.html">著作権情報の登録依頼</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./regist_author_song.html">著作権登録楽曲の表示</a></li>
+      </ul><!-- .prt-headerchildmenu -->
+    </li>
+    <li class="prt-headermenu__item"><a href="#">Promotion</a></li>
+    <li class="prt-headermenu__item"><a href="#">Report</a></li>
+    <li class="prt-headermenu__item">
+      <a href="#">Cashing</a>
+      <ul class="prt-headerchildmenu">
+        <li class="prt-headerchildmenu__item"><a href="./cashing_choose_pay.html">支払い方法登録</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./cashing_payment_application.html">支払い請求</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./cashing_sprit.html">スプリット設定</a></li>
+      </ul><!-- .prt-headerchildmenu -->
+    </li>
+    <li class="prt-headermenu__item">
+      <a href="#">Support</a>
+      <ul class="prt-headerchildmenu">
+        <li class="prt-headerchildmenu__item"><a href="./support_faq.html">FAQ</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./support_contact.html">お問い合わせ</a></li>
+      </ul><!-- .prt-headerchildmenu -->
+    </li>
+    <li class="prt-headermenu__item"><a href="./account.html">Account</a></li>
+    <li class="prt-headermenu__item white"><a href="#">Josh</a></li>
+  </ul><!-- .prt-headermenu -->
+</header><!-- .area-header -->
+<div class="prt-dashhead">
+  <div class="prt-dashhead__name">Hello, John!</div>
+</div><!-- .prt-dashhead -->
+<div class="area-dashnews">
+  <h2 class="area-dashnews__h">MESSAGE</h2>
+  <div class="prt-dashnews__wrap">
+    <div class="prt-dashnews__index">著作権登録(1)、スプリットのオファー(1)が届いています。</div>
+    <div class="area-dashnews__morelink"><a href="#">いますぐ確認する</a></div>
+  </div>
+</div><!-- .area-dashnews -->
+<div class="area-content">
+  <div class="area-main">
+    <div class="area-stats">
+      <h2 class="area-stats__h">STATS</h2>
+      <div class="area-stats__content">
+        <div class="area-stats__row area-stats__flexbox">
+          <div class="area-stats__col">
+            <div class="area-stats__rowh">Top Songs</div>
+            <label for="" class="prt-statspd">
+              <select name="" id="">
+                <option value="0">Sep/2021</option>
+                <option value="1">Aug/2021</option>
+                <option value="2">Jul/2021</option>
+              </select>
+            </label><!-- .prt-statspd -->
+            <div class="area-stats__graph">
+              <canvas id="myChart01" width="400" height="400"></canvas>
+            </div>
+          </div>
+          <div class="area-stats__col">
+            <div class="area-stats__rowh">Daily Plays</div>
+            <label for="" class="prt-statspd">
+              <select name="" id="">
+                <option value="0">各曲</option>
+                <option value="1">xxxxxxx</option>
+              </select>
+            </label><!-- .prt-statspd -->
+            <div class="area-stats__graph">
+              <canvas id="myChart02" width="400" height="400"></canvas>
+            </div>
+          </div>
+          <div class="area-stats__col">
+            <div class="area-stats__rowh">Sales</div>
+            <ul class="prt-statscheckboxlist">
+              <li class="prt-statscheckboxlist__item">6 month</li>
+              <li class="prt-statscheckboxlist__item">1 year</li>
+            </ul><!-- .prt-statscheckboxlist -->
+            <label for="" class="prt-statspd">
+              <select name="" id="">
+                <option value="0">Total</option>
+                <option value="1">xxxxxxx</option>
+              </select>
+            </label><!-- .prt-statspd -->
+            <div class="area-stats__graph">
+              <canvas id="myChart03" width="400" height="400"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="area-stats__bnr"><a href="./report.html">さらに詳しく見る</a></div>
+    </div><!-- .area-stats -->
+    <div class="area-release">
+      <h2 class="area-release__h">
+        My release, composition & lyrics
+        <a href="#" class="area-release__h__plus">＋</a>
+      </h2>
+      <ul class="prt-releaselist">
+        <li class="prt-releaselist__item">
+          <div class="prt-releaselist__img" style="background-image: url('https://cdn.crello.com/common/f3476718-c5ce-4685-9806-9152eb70c124_450.jpg')"></div>
+          <div class="prt-releaselist__name">タイトルが入る</div>
+          <div class="prt-releaselist__label">配信開始</div>
+        </li>
+        <li class="prt-releaselist__item">
+          <div class="prt-releaselist__img" style="background-image: url('https://www.glorify.com/wp-content/uploads/2020/12/artistic-album-cover-design-template-d12ef0296af80b58363dc0deef077ecc_screen.jpg')"></div>
+          <div class="prt-releaselist__name">タイトルが入る</div>
+          <div class="prt-releaselist__label">著作権申請中</div>
+        </li>
+        <li class="prt-releaselist__item">
+          <div class="prt-releaselist__img" style="background-image: url('https://blog.dozmia.com/content/images/2019/01/Portrait-The-Weeknd.jpg')"></div>
+          <div class="prt-releaselist__name">タイトルが入る</div>
+          <div class="prt-releaselist__label">配信開始待ち</div>
+        </li>
+        <li class="prt-releaselist__item">
+          <div class="prt-releaselist__img" style="background-image: url('https://i.pinimg.com/736x/0e/e6/08/0ee6080edd19dee36504a9b9eb45b94f.jpg')"></div>
+          <div class="prt-releaselist__name">タイトルが入る</div>
+          <div class="prt-releaselist__label">編集中</div>
+        </li>
+        <li class="prt-releaselist__item">
+          <div class="prt-releaselist__img" style="background-image: url('https://cdn.crello.com/downloads/3fbf7660-e86c-4afe-b5b0-5873a94e359f_450.jpeg')"></div>
+          <div class="prt-releaselist__name">タイトルが入る</div>
+          <div class="prt-releaselist__label">編集中</div>
+        </li>
+      </ul><!-- .prt-releaselist -->
+    </div><!-- .area-release -->
+  </div><!-- .area-main -->
+  <div class="area-side">
+    <div class="prt-sidebox prt-sidebox--yellow">
+      <h3 class="prt-sidebox__h">著作権収入</h3>
+      <ul class="prt-statscheckboxlist">
+        <li class="prt-statscheckboxlist__item">～3ヶ月</li>
+        <li class="prt-statscheckboxlist__item">～6ヶ月</li>
+      </ul><!-- .prt-statscheckboxlist -->
+      <div class="prt-sideprice"><span class="prt-sideprice__yen">￥</span>12,345</div>
+    </div><!-- .prt-sidebox -->
+    <div class="prt-sidebox">
+      <h3 class="prt-sidebox__h">引き出し可能額</h3>
+      <div class="prt-sideprice"><span class="prt-sideprice__yen">￥</span>234,567</div>
+      <div class="prt-sidebox__bnr"><a href="">引き出し</a></div>
+    </div><!-- .prt-sidebox -->
+    <div class="prt-sidebox prt-sidebox--nobg">
+      <h3 class="prt-sidebox__h">NEWS</h3>
+      <ul class="prt-sidebnrlist">
+        <li class="prt-sidebnrlist__item"><img src="https://www.tunecore.co.jp/static/content/images/News/ogp.jpg" alt=""></li>
+        <li class="prt-sidebnrlist__item"><img src="https://www.tunecore.co.jp/static/content/images/News/LMCP_20170825_0911_1.png" alt=""></li>
+        <li class="prt-sidebnrlist__item"><img src="https://www.musicman.co.jp/wp-content/uploads/2020/01/TCJ_campaign_2020-600x300.jpg" alt=""></li>
+      </ul><!-- .prt-sidebnrlist -->
+    </div><!-- .prt-sidebox -->
+  </div><!-- .area-side -->
+</div><!-- .area-content -->
+</div><!-- .area-all -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
+<script>
+
+var ctx = document.getElementById("myChart01");
+var myPieChart = new Chart(ctx, {
+  type: 'pie',
+  data: {
+    labels: ["song01", "song02", "song03"], //データ項目のラベル
+    datasets: [{
+        backgroundColor: [
+            "rgba(60, 60, 255, 1)",
+            "rgba(60, 255, 60, 1)",
+            "rgba(255, 60, 60, 1)"
+        ],
+        data: [45, 32, 18], //グラフのデータ
+        borderWidth: 0
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      //グラフタイトル
+      text: ''
+    }
+  }
+});
+
+var ctx = document.getElementById('myChart02');
+var data = {
+    labels: ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月"],
+    datasets: [{
+        label: 'song01',
+        data: [520, 530, 480, 480, 510, 450, 420, 380, 430],
+        backgroundColor: "rgba(60, 60, 255, 1)",
+        borderColor: 'rgba(60, 60, 255, 1)',
+        lineTension: 0,
+        fill: false,
+        borderWidth: 3
+    },{
+        label: 'song02',
+        data: [420, 330, 400, 280, 310, 450, 500, 420, 630],
+        backgroundColor: "rgba(60, 255, 60, 1)",
+        borderColor: 'rgba(60, 255, 60, 1)',
+        lineTension: 0,
+        fill: false,
+        borderWidth: 3
+    },{
+        label: 'song03',
+        data: [680, 740, 900, 520, 630, 480, 500, 520, 730],
+        backgroundColor: "rgba(255, 60, 60, 1)",
+        borderColor: 'rgba(255, 60, 60, 1)',
+        lineTension: 0,
+        fill: false,
+        borderWidth: 3
+    }]
+};
+var options = {
+    scales: {
+        yAxes: [{
+            ticks: {
+                min: 300
+                //beginAtZero: true
+            }
+        }]
+    }
+};
+var ex_chart = new Chart(ctx, {
+    type: 'line',
+    data: data,
+    options: options
+});
+
+var ctx = document.getElementById("myChart03").getContext('2d');
+ctx.height = 300;
+var myChart = new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels:  ["4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
+      datasets: [
+        {
+          label: "song01",
+          data: [10, 9, 5, 15, 10, 9, 7, 11, 8],
+          backgroundColor: "rgba(60, 60, 255, 1)"
+        },
+        {
+          label: "song02",
+          data: [5, 7, 6, 5, 8, 6, 3, 5, 7],
+          backgroundColor: "rgba(60, 255, 60, 1)"
+        },
+        {
+          label: "song03",
+          data: [8, 6, 3, 5, 7, 5, 7, 6, 5],
+          backgroundColor: "rgba(255, 60, 60, 1)"
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      title: {
+        display: true,
+        fontSize: 20,
+        text: "積上げ棒グラフ"
+      },
+      legend: {
+        position: 'bottom'
+      },            
+      scales: {
+        x: {
+          stacked: true,
+        },
+        y: {
+          stacked: true,
+        }
+      }
+    }
+});
+
+</script>
+</body>
+</html>

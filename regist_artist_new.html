@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>アーティスト情報の登録｜Rightswave</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="area-all area-login">
+
+  <div class="prt-signstep">
+    <div class="prt-signstep__item"><span>ユーザー登録</span></div>
+    <div class="prt-signstep__item prt-signstep__item--current"><span>アーティスト登録</span></div>
+    <div class="prt-signstep__item"><span>楽曲登録</span></div>
+    <div class="prt-signstep__item"><span>著作者登録</span></div>
+  </div><!-- .prt-signstep -->
+
+<header class="area-header area-header--login">
+  <h1 class="area-header__logo">
+    <a href="#"><img src="./images/logo.svg" alt=""></a>
+    <span class="area-header__logo__sm">by Rightsscale, Inc.</span>
+  </h1>
+  <ul class="prt-headermenu">
+    <li class="prt-headermenu__item">
+      <a href="#">My Artists &amp; Release</a>
+      <ul class="prt-headerchildmenu">
+        <li class="prt-headerchildmenu__item"><a href="./regist_artist.html">アーティストの追加・編集</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./regist_song.html">楽曲の追加・編集</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./regist_author.html">著作権情報の登録依頼</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./regist_author_song.html">著作権登録楽曲の表示</a></li>
+      </ul><!-- .prt-headerchildmenu -->
+    </li>
+    <li class="prt-headermenu__item"><a href="#">Promotion</a></li>
+    <li class="prt-headermenu__item"><a href="#">Report</a></li>
+    <li class="prt-headermenu__item">
+      <a href="#">Cashing</a>
+      <ul class="prt-headerchildmenu">
+        <li class="prt-headerchildmenu__item"><a href="./cashing_choose_pay.html">支払い方法登録</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./cashing_payment_application.html">支払い請求</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./cashing_sprit.html">スプリット設定</a></li>
+      </ul><!-- .prt-headerchildmenu -->
+    </li>
+    <li class="prt-headermenu__item">
+      <a href="#">Support</a>
+      <ul class="prt-headerchildmenu">
+        <li class="prt-headerchildmenu__item"><a href="./support_faq.html">FAQ</a></li>
+        <li class="prt-headerchildmenu__item"><a href="./support_contact.html">お問い合わせ</a></li>
+      </ul><!-- .prt-headerchildmenu -->
+    </li>
+    <li class="prt-headermenu__item"><a href="./account.html">Account</a></li>
+    <li class="prt-headermenu__item white"><a href="#">Josh</a></li>
+  </ul><!-- .prt-headermenu -->
+</header><!-- .area-header -->
+
+<div class="area-contentbox">
+  <h2 class="area-contentbox__h">アーティスト登録・編集</h2>
+  <p class="area-contentbox__caption">
+    アーティストとしての情報を入力します。<br>
+    複数のアーティストを登録することができます。
+  </p>
+
+  <div class="area-artistedit-new">
+    <ul class="prt-artisteditlist">
+      <li class="prt-artisteditlist__item">
+        <div class="prt-artisteditlist__th">アーティスト名</div>
+        <div class="prt-artisteditlist__td"><input type="text"></div>
+      </li>
+      <li class="prt-artisteditlist__item">
+        <div class="prt-artisteditlist__th">アーティスト名（カナ）</div>
+        <div class="prt-artisteditlist__td"><input type="text"></div>
+      </li>
+      <li class="prt-artisteditlist__item">
+        <div class="prt-artisteditlist__th">アーティスト名（海外での表記）</div>
+        <div class="prt-artisteditlist__td"><input type="text"></div>
+      </li>
+      <li class="prt-artisteditlist__item">
+        <div class="prt-artisteditlist__th">ジャンル</div>
+        <div class="prt-artisteditlist__td">
+          <label for="artisteditlist-genre" class="prt-artisteditlist__pd">
+            <select name="" id="artisteditlist-genre">
+              <option value="japan">ロック</option>
+              <option value="sample01">ジャンル01</option>
+              <option value="sample02">ジャンル02</option>
+              <option value="sample03">ジャンル03</option>
+            </select>
+          </label>
+        </div>
+      </li>
+      <li class="prt-artisteditlist__item">
+        <ul class="prt-checkboxlist prt-checkboxlist--center">
+          <li class="prt-checkboxlist__item"><input type="checkbox" id="getnews"><label for="getnews">このアーティストをデフォルトにする</label></li>
+        </ul><!-- .prt-checkboxlist -->
+      </li>
+    </ul><!-- .prt-artisteditlist -->
+    <div class="prt-artistlist__caption">
+      このアーティストに関する収益は、特に指定しない限り全てあなたのものとなります。<br>
+      このアーティストの収益支払いを常にスプリット対象にする場合は<a href="#">こちら</a>
+    </div>
+    
+    <div class="prt-registmore">
+      <a href="javascript:void(0)" id="openmore"><span>さらに情報を入力する</span></a>
+    </div><!-- .prt-registmore -->
+    <ul class="prt-artisteditlist prt-artisteditlist--mt4rem" id="moreinput-artistlist">
+      <li class="prt-artisteditlist__item">
+        <div class="prt-artisteditlist__th">アーティスト画像</div>
+        <div class="prt-artisteditlist__td">
+          <div class="prt-editimage">
+            <div class="prt-editimage__thumb" style="background-image: url('./images/test_artist.jpg')"></div>
+            <div class="prt-editimage__link"><a href="#">画像を変更する</a></div>
+          </div><!-- .prt-editimage -->
+        </div>
+      </li>
+      <li class="prt-artisteditlist__item">
+        <div class="prt-artisteditlist__th">サブジャンル</div>
+        <div class="prt-artisteditlist__td">
+          <label for="artisteditlist-genre-sub" class="prt-artisteditlist__pd">
+            <select name="" id="artisteditlist-genre-sub">
+              <option value="japan">ロック</option>
+              <option value="sample01">ジャンル01</option>
+              <option value="sample02">ジャンル02</option>
+              <option value="sample03">ジャンル03</option>
+            </select>
+          </label>
+        </div>
+      </li>
+      <li class="prt-artisteditlist__item">
+        <div class="prt-artisteditlist__th">ジャンル２</div>
+        <div class="prt-artisteditlist__td">
+          <label for="artisteditlist-subgenre" class="prt-artisteditlist__pd">
+            <select name="" id="artisteditlist-subgenre">
+              <option value="japan">ロック</option>
+              <option value="sample01">ジャンル01</option>
+              <option value="sample02">ジャンル02</option>
+              <option value="sample03">ジャンル03</option>
+            </select>
+          </label>
+        </div>
+      </li>
+      <li class="prt-artisteditlist__item">
+        <div class="prt-artisteditlist__th">サブジャンル２</div>
+        <div class="prt-artisteditlist__td">
+          <label for="artisteditlist-subgenre-sub" class="prt-artisteditlist__pd">
+            <select name="" id="artisteditlist-subgenre-sub">
+              <option value="japan">ロック</option>
+              <option value="sample01">ジャンル01</option>
+              <option value="sample02">ジャンル02</option>
+              <option value="sample03">ジャンル03</option>
+            </select>
+          </label>
+        </div>
+      </li>
+      <li class="prt-artisteditlist__item">
+        <div class="prt-artisteditlist__th">所属するレーベル</div>
+        <div class="prt-artisteditlist__td"><input type="text"></div>
+      </li>
+      <li class="prt-artisteditlist__item">
+        <div class="prt-artisteditlist__th">所属するレーベル（海外表記）</div>
+        <div class="prt-artisteditlist__td"><input type="text"></div>
+      </li>
+      <li class="prt-artisteditlist__item">
+        <div class="prt-artisteditlist__th">プロフィールテキスト</div>
+        <div class="prt-artisteditlist__td"><textarea></textarea></div>
+      </li>
+      <li class="prt-artisteditlist__item">
+        <div class="prt-artisteditlist__th">スプリット支払い有無</div>
+        <div class="prt-artisteditlist__td">
+          <ul class="prt-radiolist">
+            <li class="prt-radiolist__item"><input type="radio" name="split" id="spliton" checked="checked"><label for="spliton" class="spliton">あり</label></li>
+            <li class="prt-radiolist__item"><input type="radio" name="split" id="splitoff"><label for="splitoff" class="splitoff">なし</label></li>
+          </ul><!-- .prt-radiolist -->
+        </div>
+      </li>
+      <li class="prt-artisteditlist__item for-splitoff">
+        <div class="prt-artisteditlist__th">スプリット支払い先ID</div>
+        <div class="prt-artisteditlist__td"><input type="text"></div>
+      </li>
+      <li class="prt-artisteditlist__item">
+        <div class="prt-artisteditlist__th">Webサイト</div>
+        <div class="prt-artisteditlist__td"><input type="text"></div>
+      </li>
+      <li class="prt-artisteditlist__item">
+        <div class="prt-artisteditlist__th">Twitter</div>
+        <div class="prt-artisteditlist__td">
+          <div class="prt-snsinput">
+            <span class="prt-snsinput__text">https://twitter.com/</span>
+            <input type="text">
+          </div><!-- .prt-snsinput -->
+        </div>
+      </li>
+      <li class="prt-artisteditlist__item">
+        <div class="prt-artisteditlist__th">Instagram</div>
+        <div class="prt-artisteditlist__td">
+          <div class="prt-snsinput">
+            <span class="prt-snsinput__text">https://www.instagram.com/</span>
+            <input type="text">
+          </div><!-- .prt-snsinput -->
+        </div>
+      </li>
+      <li class="prt-artisteditlist__item">
+        <div class="prt-artisteditlist__th">Facebook</div>
+        <div class="prt-artisteditlist__td">
+          <div class="prt-snsinput">
+            <span class="prt-snsinput__text">https://www.facebook.com/</span>
+            <input type="text">
+          </div><!-- .prt-snsinput -->
+        </div>
+      </li>
+      <li class="prt-artisteditlist__item">
+        <div class="prt-artisteditlist__th">Tik Tok ID</div>
+        <div class="prt-artisteditlist__td">
+          <div class="prt-snsinput">
+            <span class="prt-snsinput__text">tiktok.com/@</span>
+            <input type="text">
+          </div><!-- .prt-snsinput -->
+        </div>
+      </li>
+      <li class="prt-artisteditlist__item">
+        <div class="prt-artisteditlist__th">soundcloud</div>
+        <div class="prt-artisteditlist__td">
+          <div class="prt-snsinput">
+            <span class="prt-snsinput__text">soundcloud.com/</span>
+            <input type="text">
+          </div><!-- .prt-snsinput -->
+        </div>
+      </li>
+      <li class="prt-artisteditlist__item">
+        <div class="prt-artisteditlist__th">Apple Music Artitst ID</div>
+        <div class="prt-artisteditlist__td"><input type="text"></div>
+      </li>
+      <li class="prt-artisteditlist__item">
+        <div class="prt-artisteditlist__th">Spotify Artitst ID</div>
+        <div class="prt-artisteditlist__td"><input type="text"></div>
+      </li>
+      <li class="prt-artisteditlist__item">
+        <div class="prt-artisteditlist__th">YouTubeチャンネルURL</div>
+        <div class="prt-artisteditlist__td">
+          <div class="prt-snsinput">
+            <span class="prt-snsinput__text">youtube.com/channel/</span>
+            <input type="text">
+          </div><!-- .prt-snsinput -->
+        </div>
+      </li>
+      <li class="prt-artisteditlist__item">
+        <div class="prt-artisteditlist__th">Wikipedia</div>
+        <div class="prt-artisteditlist__td">
+          <div class="prt-snsinput">
+            <span class="prt-snsinput__text">wikipedia.org/wiki/</span>
+            <input type="text">
+          </div><!-- .prt-snsinput -->
+        </div>
+      </li>
+    </ul><!-- .prt-artisteditlist -->
+    <div class="prt-signboxbnrs">
+      <div class="prt-signboxbnrs__item"><a href="./dashboard.html" id="registsubmit">
+        登録する
+      </a></div>
+    </div><!-- .prt-signboxbnrs -->
+  </div><!-- .area-artistedit-new -->
+
+</div><!-- .area-contentbox -->
+
+</div><!-- .area-all -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+  var artistitem = $('.prt-artistlist__item > a');
+  artistitem.on('click', function(){
+    $(this).next().slideToggle();
+    artistitem.toggleClass('pushed');
+  });
+
+  $('#openmore').on('click', function(){
+    $("#moreinput-artistlist").slideToggle();
+  });
+
+  $('.prt-radiolist input').on('click', function(){
+    if($('#spliton').prop('checked') == true) {
+      $('.for-splitoff').removeClass('none');
+    }
+    if($('#splitoff').prop('checked') == true) {
+      $('.for-splitoff').addClass('none');
+    }
+  });
+});
+
+
+</script>
+</body>
+</html>
