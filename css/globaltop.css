@@ -529,9 +529,13 @@ body.is_show {
 
 /*animation*/
 .is_inset {
-  display: flex;
   font-size: 0;
   overflow: hidden;
+  white-space: nowrap;
+}
+
+.is_inset > * {
+  display: inline-block;
 }
 
 .is_inset #bgimage img, .is_inset #bgimage-clone img {

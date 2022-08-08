@@ -1,9 +1,12 @@
 /*animation*/
 .is_inset{
 
-    display: flex;
     font-size: 0;
     overflow: hidden;
+    white-space: nowrap;
+    > * {
+        display: inline-block;
+    }
 
     #bgimage,#bgimage-clone{
         img {
