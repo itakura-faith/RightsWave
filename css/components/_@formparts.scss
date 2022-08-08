@@ -1,0 +1,50 @@
+
+/*form*/
+$placeholder_color: inherit;
+$placeholder_font-size: inherit;
+
+::-webkit-input-placeholder {
+	color: $placeholder_color;
+	font-size: $placeholder_font-size;
+}
+
+:-ms-input-placeholder {
+	color: $placeholder_color;
+	font-size: $placeholder_font-size;
+}
+::-moz-placeholder {
+	color: $placeholder_color;
+	font-size: $placeholder_font-size;
+}
+::-ms-input-placeholder {
+	color: $placeholder_color;
+	font-size: $placeholder_font-size;
+}
+::placeholder {
+	color: $placeholder_color;
+	font-size: $placeholder_font-size;
+}
+input{
+	outline: none;
+}
+input[type="email"]{
+	width: 100%;
+}
+:disabled {
+	opacity: .5!important;
+}
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="email"],
+select{
+    height: 2.75em;
+    border-radius: 0;
+	font-size: inherit;
+	
+}
+input[type="date"]{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}

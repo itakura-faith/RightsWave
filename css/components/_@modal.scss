@@ -1,0 +1,48 @@
+.modal{
+    align-items: center;
+    background-color: rgba(0,0,0,.5);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: -200vw;
+    opacity: 0;
+    transition: opacity .2s;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: z(modal);
+
+    &.is__show {
+        left: 0;
+        opacity: 1;
+    }
+
+    &-body{
+        background-color: #fff;
+        border-radius: 12px;
+        box-sizing: border-box;
+        padding: 1.5rem 2rem;
+        position: relative;
+        max-width: 480px;
+        width: 90%;
+    }
+
+    &-closeBt {
+        height: 30px;
+        padding: 6px;
+        position: absolute;
+        top: -42px;
+        right: 0;
+        width: 30px;
+
+        .icon{
+            stroke: #fff;
+            height: 18px;
+            width: 18px;
+        }
+    }
+}
+
+body.is__locked {
+    overflow: hidden;
+}

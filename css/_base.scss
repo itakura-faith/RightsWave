@@ -1,0 +1,49 @@
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: $fontfamily;
+	color: $textColor_basic;
+	display: flex;
+	flex-direction: column;
+	font-size: 1.4rem;
+	font-weight: 300;
+	margin: 0;
+	line-height: 1.5;
+	word-break: break-word;
+	min-height: 100vh;
+}
+
+#main{
+	flex-grow: 1;
+	position: relative;
+	z-index: z(main);
+}
+
+
+a {
+	color: inherit;
+}
+
+@media screen and (max-width: #{$MobilePoint - 0.01px}){
+	.pc {
+		display: none;
+	}
+}
+
+@media screen and (min-width: $MobilePoint){
+	a,button{
+		&:hover{
+			opacity: .8;
+		}
+	}
+	.sp {
+		display: none;
+	}
+	.section.line-sepalater-bottom {
+		padding-bottom: calc(50px + 2em);
+	}
+}
+

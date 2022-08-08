@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-style: inherit;
+	vertical-align: baseline
+}
+audio, canvas, progress, video {
+	display: inline-block
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block
+}
+ol, ul {
+	list-style: none
+}
+a {
+	text-decoration: none;
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	cursor: pointer
+}
+img {
+	max-width: 100%
+}
+html {
+	font-size: 62.5%
+}
+
+input[type="submit"]{
+    -webkit-appearance:none;
+    appearance:none;
+    border: none;
+    cursor: pointer;
+    outline:none;
+}
+
+button{
+  -webkit-appearance:none;
+  appearance:none;
+  border: none;
+  background: none;
+  color: inherit;
+  font-family: $fontfamily;
+  font-size: inherit;
+  font-style: normal;
+  outline:none;
+ -ms-user-select: none; /* IE 10+ */
+ -moz-user-select: -moz-none;
+ -khtml-user-select: none;
+ -webkit-user-select: none;
+ user-select: none;
+ cursor: pointer;
+}

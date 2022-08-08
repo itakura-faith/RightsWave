@@ -1,0 +1,23 @@
+/*animation*/
+.is_inset{
+
+    display: flex;
+    font-size: 0;
+    overflow: hidden;
+
+    #bgimage,#bgimage-clone{
+        img {
+            animation: bganimation 30s linear infinite both;
+        }
+    }
+
+}
+
+@keyframes bganimation {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform:translateX(-100%)
+    }
+}

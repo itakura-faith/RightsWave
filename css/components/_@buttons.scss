@@ -1,0 +1,34 @@
+
+@mixin button-bd-rd {
+	align-items: center;
+    border: solid 1px;
+    border-radius: 2.6em;
+    display: flex;
+    justify-content: center;
+    height: 2.6em;
+    padding: 0 1.2em;
+    flex-shrink: 0;
+    min-width: 7em;
+}
+
+
+.button-arrow-large {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	padding: 5px;
+	&::after {
+		background: no-repeat 50% 50% url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2026.52%2051.62%22%3E%3Cdefs%3E%3Cstyle%3E.icon-arrow-large%7Bfill%3Anone%3Bstroke%3A%23eff0f4%3Bstroke-miterlimit%3A4%3Bstroke-width%3A1px%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cpath%20class%3D%22icon-arrow-large%22%20d%3D%22M.35%2C51.27L25.81%2C25.81%2C.35%2C.35%22%2F%3E%3C%2Fsvg%3E') ;
+		background-size: contain;
+		content: "";
+		margin-left: 5px;
+		height: 30px;
+		width: 15px;
+	}
+}
+@media screen and (min-width: $MobilePoint){
+	&::after {
+		height: 50px;
+		width: 25px;
+	}
+}

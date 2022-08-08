@@ -1,0 +1,232 @@
+@charset "UTF-8";
+@import "config";
+
+$z-index:(
+    modal,
+	float_menu,
+    global_header,
+	global_footer,
+    main,
+    bg
+);
+
+/*共通*/
+@import "mixin";
+@import "reset";
+@import "base";
+
+/*共通コンポーネント*/
+@import "components/@buttons";
+
+/*個別コンポーネント*/
+@import "components/@formparts";
+@import "components/@modal";
+@import "components/@infolist";
+@import "components/@newsletter_reg_box";
+
+/*グローバルトップ*/
+
+body{
+    background-color: #000;
+    color: #fff;
+    line-height: 1.8;
+    opacity: 0;
+    &.is_show{
+        opacity: 1;
+        transition: opacity 2s;
+    }
+}
+
+.gtop-header{
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Avenir Next Cyr Medium', $fontfamily;
+    padding: 10px;
+    width: 100%;
+    z-index: z(global_header);
+    &__rightbox {
+        margin-left: auto;
+        width: max-content;
+    }
+}
+
+
+#globaltop-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: z(bg);
+    img {
+        height: auto;
+        width: 100%;
+    }
+    &.is_inset img{
+        height: 100%;
+        width: auto;
+        max-width: none;
+    }
+    &::before {
+        background: linear-gradient(135deg, #114D89, #179C7E);
+        bottom: 0;
+        content: "";
+        display: block;
+        left: 0;
+        mix-blend-mode: multiply;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+    }
+}
+#main {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 5vh 20px;
+}
+.gtopmain__logo,
+.gtopmain__secondaryText,
+.gtopmain__infolist{
+    margin-top: 10vh;
+}
+.gtopmain__logo,
+.gtopmain__primaryText{
+    max-width: 400px;
+    width: 90%;
+}
+
+.gtopmain{
+    &__primaryText{
+        img {
+            width: 100%;
+        }
+    }
+    &__secondaryText{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 60%;
+    }
+}
+
+.text-line {
+    display: inline-block;
+}
+
+.infolist{
+    max-width: 1080px;
+}
+
+/*フッター*/
+.gtop-footer{
+
+    background-color: rgba(0,0,0,.35);
+    padding: 30px 0 5px;
+    text-align: center;
+    z-index: z(global_footer);
+
+    .global-menu {
+        font-family: 'Avenir Next Cyr Medium', $fontfamily;
+        margin: 20px auto ;
+    }
+    .sitename{
+        color: rgba(239, 240, 244, .6);
+        column-gap: 2em;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        font-size: clamp(.8rem,.7vw,1.4rem);     
+    }
+    .logo{
+        width: 135px;
+    }
+    
+}
+.prt-copyright {
+    color: rgba(239, 240, 244, .6);
+}
+
+
+@media screen and (max-width: #{$MobilePoint + 0.01px}){
+    #logo-copy {
+        transform: scale(1.4) translateY(-10%);
+    }
+    .gtop-footer{
+        .global-menu__item + .global-menu__item {
+            margin-top: .3em;
+        }
+    }
+}
+@media screen and (min-width: $MobilePoint){
+    .gtop-header{
+        padding: 30px;
+    }
+    .gtopmain__logo,
+    .gtopmain__primaryText{
+        max-width: 860px;
+        width: 70%;
+    }
+    
+    .gtop-footer {
+        align-items: center;
+        display: flex;
+        column-gap: 2em;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 clamp(10px,2%,30px);
+        width: 100%;
+        z-index: z(global_footer);
+        &__contents{
+            align-items: center;
+            column-gap: 1em;
+            display: flex;
+            justify-content: space-between;
+            min-height: 108px;
+            max-width: 100%;
+            flex-grow: 1;
+            flex-shrink: 0;
+        }
+        .sitename {
+            flex-direction: row;
+            flex-wrap: wrap;
+            max-width: 400px;
+            white-space: nowrap;
+        }
+        .logo{
+            margin-right: 1.5em;
+            max-width: 100%;
+            width: 200px;
+        }
+        .global-menu {
+            display: flex;
+            column-gap: 1em;
+            flex-grow: 1;
+            font-size: 2rem;
+            justify-content: flex-end;
+            &__item {
+                font-size: clamp(1.2rem,1vw,1.6rem);
+                flex-shrink: 0;
+                margin: 0 clamp(0em, calc(4vw - 40px), 3em);
+                white-space: nowrap;
+            }
+        }
+        .prt-copyright {
+            font-size: clamp(1rem,.7vw,1.4rem);
+            flex-shrink: 0;
+        }
+
+    }
+    .gtopmain__logo,
+    .gtopmain__secondaryText,
+    .gtopmain__infolist{
+        margin-top: 10vh;
+    }
+    #main {
+        padding: 10vh 20px;
+    }
+}
+
+@import "components/@bganimation";
