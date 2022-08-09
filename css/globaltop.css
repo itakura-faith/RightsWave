@@ -445,7 +445,7 @@ body.is_show {
   position: fixed;
   top: 0;
   left: 0;
-  bottom: 0;
+  height: 100vh;
   width: 100%;
   z-index: 1;
 }
