@@ -1,0 +1,53 @@
+$sksize: 1280px;
+
+
+#stalker {
+    display: none;
+    pointer-events: none;
+    position: fixed;
+    top: #{-1*$sksize/2};
+    left: #{-1*$sksize/2};
+    width: $sksize;
+    height: $sksize;
+    background: radial-gradient(ellipse farthest-side,#0cd3e0, rgba(12,221,224,0)) no-repeat 50% 50%;
+    border-radius: 50%;
+    opacity: .3;
+    transform: translate(0,0) scale(1);
+    transition: transform 2s, opacity .5s;
+    transition-timing-function: ease-out;
+    z-index: z(storker);
+    &.is__hov {
+        transition-duration: .3s;
+        opacity: .6;
+    }
+    &.is__show {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: #{$MobilePoint + 0.01px}){
+    #stalker {
+        display: none!important;
+    }
+}
+
+
+$hov_d: .2s;
+/*ホバーアニメーション*/
+@media screen and (min-width: $MobilePoint){
+	.link_bttomline{
+		&:hover::after {
+            transition-delay: $hov_d;
+		}
+	}
+
+	.link-marker{
+		&:hover{
+            transition-delay: $hov_d;
+			 .link-marker__text::after {
+                transition-delay: $hov_d;
+            }
+		}
+	}
+}

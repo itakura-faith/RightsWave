@@ -20,7 +20,7 @@
 <body> 
 
 <header class="gtop-header">
-    <div class="gtop-header__rightbox"><a class="button-arrow-large" href="./signin.html">Members Only</a></div>
+    <div class="gtop-header__rightbox"><a class="button-arrow-large link-marker" href="./signin.html"><span class="link-marker__text">Members Only</span></a></div>
 </header><!-- .gtop-header -->
 
 <main id="main">
@@ -56,14 +56,18 @@
       </svg>
   </h1>
   <p class="gtopmain__secondaryText"><img src="./images/globaltop/2022_autumn.svg" alt="2022 AUTUMN"></p>
+  
+  <!-- TODO:
+     8.09 preopen 未実装
 
   <div class="newsletter-regbox">
     <p class="newsletter-regbox__primarytext">RightsWaveマガジン配信中！<span class="text-line">リリース前に新サービスの情報をキャッチしよう</span></p>
     <div class="newsletter-regbox__formbox">
-      <input class="newsletter-regbox__formbox__input" type="email" value="" placeholder="メールアドレス">
+      <input class="newsletter-regbox__formbox__input" type="email" placeholder="メールアドレス">
       <button class="newsletter-regbox__formbox__button">送信</button>
     </div>
   </div>
+  -->
 
   <div class="gtopmain__infolist" id="NewsRelease">
     <ul class="infolist">
@@ -82,14 +86,40 @@
       <span>Produced by <strong>Faith Group</strong></span>
     </a>
     <ul class="global-menu">
-      <li class="global-menu__item"><a href="./support_contact.html">Contact</a></li>
-      <li class="global-menu__item"><a href="./support_privacypolicy.html">Privacy Policy</a></li>
-      <li class="global-menu__item"><a href="./signin.html">Members Only</a></li>
-      <li class="global-menu__item"><a href="./app testers wanted.html">モニターユーザー募集中</a></li>
+      <li class="global-menu__item"><a class="link_bttomline" href="./support_contact.html">Contact</a></li>
+      <li class="global-menu__item"><a class="link_bttomline" href="./support_privacypolicy.html">Privacy Policy</a></li>
+      <li class="global-menu__item"><a class="link_bttomline" href="./signin.html" >Members Only</a></li>
+      <li class="global-menu__item"><a class="link_bttomline" onclick="modalSet('TestersWanted-modal')">モニターユーザー募集中</a></li>
     </ul>
   </div>
   <div class="prt-copyright">&copy; 2022 Faith,Inc. All Rights Reserved.</div>
 </footer><!-- .area-footer -->
+
+<div id="TestersWanted-modal" class="modal">
+    <div class="modal-body testerswanted">
+      <figure class="testerswanted__image">
+        <picture>
+          <source media="(min-width:480px)" srcset="./images/globaltop/tester_wanted.jpg 1.5x">
+          <img src="./images/globaltop/tester_wanted.jpg">
+        </picture>
+      </figure>
+      <div class="testerswanted__contents">
+        <h2 class="testerswanted-primarytext">あなたもRightsWaveを<span class="text-line">一緒に作りませんか？</span></h2>
+        <p class="testerswanted-regulartext">RightsWaveはあなたの楽曲を全世界に配信する音楽アグリゲーションシステムです。 モニター利用をご希望の方、ご興味のある方はご連絡ください。</p>
+        <small class="note">
+          ※ ご応募いただいた方の中から審査させていただく場合がございます。 <br>
+          ※ 募集定員をオーバーしている場合や、予告なく募集を締め切らせていただく場合がございます。
+        </small>
+        <div class="testerswanted-btbox">
+          <a class="testerswanted-btbox__button" href="mailto:rightswave@faith.co.jp?subject=RightsWave%E3%83%99%E3%83%BC%E3%82%BF%E7%89%88%E3%83%A2%E3%83%8B%E3%82%BF%E3%83%BC%E5%88%A9%E7%94%A8%E5%B8%8C%E6%9C%9B&body=%E4%B8%8B%E8%A8%98%E9%A0%85%E7%9B%AE%E3%82%92%E8%A8%98%E5%85%A5%E3%81%97%E3%81%A6%E9%80%81%E4%BF%A1%E3%81%97%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82%0D%0A%0D%0A%E3%80%90%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%88%E4%BB%A3%E8%A1%A8%E8%80%85%E5%90%8D%EF%BC%89%E3%80%91%0D%0A%0D%0A%E3%80%90%E3%82%A2%E3%83%BC%E3%83%86%E3%82%A3%E3%82%B9%E3%83%88%E5%90%8D%E3%80%91%0D%0A%0D%0A%E3%80%90%E3%82%A2%E3%83%BC%E3%83%86%E3%82%A3%E3%82%B9%E3%83%88%E6%B4%BB%E5%8B%95%E3%81%AE%E3%82%8F%E3%81%8B%E3%82%8B%E3%82%82%E3%81%AE%E3%80%91%0D%0A%E2%80%BBSNS%E3%82%84%E6%A5%BD%E6%9B%B2%E9%85%8D%E4%BF%A1%E5%85%88%E3%81%AE%E3%83%AA%E3%83%B3%E3%82%AF%E3%81%AA%E3%81%A9">メールを送る</a>
+        </div>
+
+      </div>
+      <button class="modal-closeBt">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.71 51.62"><defs><style>.icon-close{fill:none;stroke:#eff0f4;stroke-miterlimit:4;stroke-width:1px;}</style></defs><g><path class="icon-close" d="M.35,51.27L25.81,25.81,.35,.35"/><path class="icon-close" d="M51.36,.36L25.9,25.81l25.46,25.46"/></g></svg>
+      </button>
+    </div>
+</div>
 
 <div id="globaltop-bg">
   <picture id="bgimage">
@@ -98,5 +128,7 @@
   </picture>
 </div>
 <script src="./js/gtop.js"></script>
+<script src="./js/modal.js"></script>
+<!--script src="./js/stalker.js"></script-->
 </body>
 </html>

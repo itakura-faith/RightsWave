@@ -22,7 +22,9 @@ var init = () =>{
 }
 
 const bganime = () => {
-  init();
+  if(init){
+    init();
+  }
 }
 
 var timer;

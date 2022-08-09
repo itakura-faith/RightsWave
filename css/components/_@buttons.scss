@@ -11,7 +11,6 @@
     min-width: 7em;
 }
 
-
 .button-arrow-large {
 	align-items: center;
 	display: flex;
@@ -27,8 +26,80 @@
 	}
 }
 @media screen and (min-width: $MobilePoint){
-	&::after {
-		height: 50px;
-		width: 25px;
+	.button-arrow-large {
+		&::after {
+			height: 50px;
+			width: 25px;
+		}
+	}
+}
+
+@mixin button-general() {
+	align-items: center;
+	background-color: #000709;
+	border-radius: 4px;
+	color: #fff;
+	display: flex;
+	font-size: 1.6rem;
+	font-weight: 600;
+	justify-content: center;
+	height: 62px;
+	opacity: 1;
+	padding: 5px;
+	min-width: 260px;	
+}
+
+.button-general {
+	@include button-general();
+}
+
+/*ホバーアニメーション*/
+@media screen and (min-width: $MobilePoint){
+	.link_bttomline{
+		position: relative;
+		&::after{
+			content: "";
+			display: block;
+			position: absolute;
+			bottom: -5px;
+			border-bottom:solid 1px;
+			left: 0;
+			opacity: 0;
+			width: 0;
+			transition: width 0s .5s ,opacity .5s;
+		}
+		&:hover::after {
+			opacity: 1;
+			transition: width .3s ,opacity .2s;
+			width: 100%;
+		}
+	}
+
+	.link-marker{
+		&__text{
+			position: relative;
+			&::after{
+				background-color: rgba(255,255,255,.9);
+				content: "";
+				display: block;
+				position: absolute;
+				bottom: 0px;
+				left: 0;
+				top:0;
+				opacity: 0;
+				width: 0;
+				transition: width 0s .5s ,opacity .5s;
+				z-index: -1;
+			}
+		}
+		&:hover{
+			color: #035e65;
+			transition: color .5s;
+			 .link-marker__text::after {
+				opacity: 1;
+				transition: width .3s ,opacity .2s;
+				width: 100%;
+			 }
+		}
 	}
 }

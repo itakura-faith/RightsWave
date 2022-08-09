@@ -1,48 +1,73 @@
+
 .modal{
     align-items: center;
     background-color: rgba(0,0,0,.5);
+    //background: linear-gradient(45deg,rgba(0,40,80,.7),rgba(0,60,46,.7));
     bottom: 0;
     display: flex;
+    color: #00070b;
     justify-content: center;
     left: -200vw;
     opacity: 0;
-    transition: opacity .2s;
+    transition: opacity .2s ,left 0s .2s;
+    padding: 15px;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: z(modal);
 
+    &.type__scroll{
+        align-items: flex-start;
+        overflow-y: auto;
+    }
+
     &.is__show {
         left: 0;
         opacity: 1;
+        transition: opacity .2s .1s,left 0s;
+        .modal-body{
+            transform: translateY(0);
+        }
     }
 
     &-body{
         background-color: #fff;
-        border-radius: 12px;
+        border-radius: 2px;
         box-sizing: border-box;
-        padding: 1.5rem 2rem;
         position: relative;
-        max-width: 480px;
-        width: 90%;
+        transform: translateY(120px);
+        transition: transform .6s;
+        max-width: 680px;
+        width: 100%;
     }
 
     &-closeBt {
         height: 30px;
-        padding: 6px;
+        padding: 0;
         position: absolute;
-        top: -42px;
+        top: 0;
         right: 0;
         width: 30px;
 
         .icon{
-            stroke: #fff;
-            height: 18px;
-            width: 18px;
+            height: 100%;
+            width: 100%;
         }
     }
+
 }
 
-body.is__locked {
+body._scrolllocked {
     overflow: hidden;
+    padding-right: var(--sc-bar-w);
+}
+
+@media screen and (min-width: $MobilePoint){
+    .modal {
+        &-closeBt {
+            height: 50px;
+            width: 50px;
+        }
+    }
+    
 }
