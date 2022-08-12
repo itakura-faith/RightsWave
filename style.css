@@ -675,6 +675,7 @@ textarea {
   .prt-signlist__item {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center; }
     .prt-signlist__item + .prt-signlist__item {
       margin-top: 1.4rem; }
@@ -690,12 +691,14 @@ textarea {
       display: block;
       font-size: 1.6rem; }
   .prt-signlist__th {
+    flex-shrink: 0;
     width: 200px;
     padding-right: 2rem;
     font-weight: bold;
     line-height: 1.4; }
   .prt-signlist__td {
-    width: calc(100% - 140px); }
+    flex-grow: 1;
+    min-width: 200px;}
   .prt-signlist__pd {
     max-width: 240px;
     display: block;
@@ -726,6 +729,7 @@ textarea {
   /*color: #FF9000;*/
   color: #8a8a8a;
   line-height: 1;
+
   font-size: 1.3rem; }
   .prt-signpwreset a {
     text-decoration: underline; }
