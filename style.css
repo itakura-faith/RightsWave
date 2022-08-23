@@ -13,7 +13,7 @@ tbody, tfoot, thead, table, label, tr, th, td {
   margin: 0;
   padding: 0;
   border: 0;
-  font-weight: normal;
+  font-weight: 500;
   outline: 0;
   vertical-align: baseline;
   list-style: none;
@@ -561,8 +561,9 @@ textarea {
     margin: 0 auto;
     padding: 1.4rem 2rem;
     background-color: #fbfe67;
-    border: 1px solid #d1d1d9;
+    border: 3px solid #eeee55;
     border-radius: 4px;
+    color: #420;
     cursor: pointer;
     display: inline-block;
     line-height: 1;
@@ -675,7 +676,6 @@ textarea {
   .prt-signlist__item {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     align-items: center; }
     .prt-signlist__item + .prt-signlist__item {
       margin-top: 1.4rem; }
@@ -691,14 +691,13 @@ textarea {
       display: block;
       font-size: 1.6rem; }
   .prt-signlist__th {
-    flex-shrink: 0;
     width: 200px;
     padding-right: 2rem;
     font-weight: bold;
+    flex-shrink: 0;
     line-height: 1.4; }
   .prt-signlist__td {
-    flex-grow: 1;
-    min-width: 200px;}
+    flex-grow: 1; }
   .prt-signlist__pd {
     max-width: 240px;
     display: block;
@@ -729,7 +728,6 @@ textarea {
   /*color: #FF9000;*/
   color: #8a8a8a;
   line-height: 1;
-
   font-size: 1.3rem; }
   .prt-signpwreset a {
     text-decoration: underline; }
@@ -763,11 +761,11 @@ textarea {
 
 .prt-checkboxlist {
   display: flex;
+  flex-wrap: wrap;
   font-size: 1.4rem; }
   .prt-checkboxlist__item {
-    position: relative; }
-    .prt-checkboxlist__item + .prt-checkboxlist__item {
-      margin-left: 2.4rem; }
+    position: relative;
+    margin-right: 2.4rem; }
     .prt-checkboxlist__item input {
       display: none; }
     .prt-checkboxlist__item--disabled label {
@@ -1000,16 +998,13 @@ textarea {
   .prt-artisteditlist__th {
     width: 300px;
     padding-right: 1.8rem;
+    line-height: 1.4;
+    flex-shrink: 0;
     position: relative; }
     .area-sign__box--w450 .prt-artisteditlist__th {
       width: 100px; }
     .prt-artisteditlist__th__text {
       position: relative; }
-      .prt-artisteditlist__th__text.required::after {
-        content: "*";
-        margin-left: 5px;
-        color: #d92323;
-        display: inline-block; }
     .prt-artisteditlist__th__help {
       margin-top: .6rem;
       color: #a8a8a8;
@@ -1063,7 +1058,7 @@ textarea {
     display: block;
     font-size: 1.2rem; }
   .prt-artisteditlist__td {
-    width: calc(100% - 300px); }
+    flex-grow: 1; }
     .area-sign__box--w450 .prt-artisteditlist__td {
     width: calc(100% - 100px); }
   .prt-artisteditlist__pd {
@@ -1092,15 +1087,16 @@ textarea {
 
 .prt-radiolist {
   display: flex;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  flex-wrap: wrap; }
   .prt-radiolist--vertical {
     flex-direction: column; }
     .prt-radiolist--vertical .prt-radiolist__item + .prt-radiolist__item {
       margin: 1rem 0 0 0; }
   .prt-radiolist__item {
     position: relative; }
-    .prt-radiolist__item + .prt-radiolist__item {
-      margin-left: 1.8rem; }
+    .prt-radiolist__item {
+      margin-right: 1.8rem; }
     .prt-radiolist__item input {
       display: none; }
     .prt-radiolist__item label {
@@ -1678,9 +1674,10 @@ textarea {
       border-top: 1px dotted #e1e1e9; }
   .prt-paymenttable__th {
     width: 220px;
+    flex-shrink: 0;
     padding: 2rem 0; }
   .prt-paymenttable__td {
-    width: calc(100% - 220px);
+    flex-grow: 1;
     padding: 2rem;
     display: flex;
     align-items: center;
@@ -2084,19 +2081,22 @@ textarea {
 
 .area-saveinmiddle {
   position: fixed;
-  bottom: 4rem; right: 4rem;
+  bottom: 3.5rem; right: 3.5rem;
   font-size: 1.6rem;
   line-height: 1.4;
   text-align: center; }
   .area-saveinmiddle a,
   .area-saveinmiddle button {
-    padding: 1.4rem 2rem;
-    background-color: #fbfe67;
-    border: 1px solid #d1d1d9;
+    padding: 1rem;
+    background: linear-gradient(#fff, #eed);
+    border: 2px solid #991;
     border-radius: 4px;
-    color: #191919;
+    color: #662;
+    border-radius: 6px;
     display: inline-block;
-    font-weight: bold; }
+    font-weight: bold;
+    font-size: 1.4rem;
+    box-shadow: 0 0 10px rgb(55, 55, 0 ,.1); }
 
 .prt-albumsonglist {
   line-height: 1.4; }
@@ -2316,9 +2316,11 @@ textarea {
       border: none; }
   .prt-contactform__th {
     width: 120px;
+    flex-shrink: 0;
+    line-height: 1.4;
     font-weight: bold; }
   .prt-contactform__td {
-    width: calc(100% - 120px);
+    flex-grow: 1;
     padding-left: 2rem; }
   .prt-contactform__pd {
     max-width: 240px;
@@ -2582,6 +2584,8 @@ textarea {
       background-color: #f6f6f9;
       border: none; }
   .prt-registform__th {
+    line-height: 1.4;
+    flex-shrink: 0;
     width: 150px; }
     .area-sign__box--w450 .prt-registform__th {
       width: 100px; }
@@ -2591,10 +2595,10 @@ textarea {
     display: block;
     font-size: 1.2rem; }
   .prt-registform__td {
-    width: calc(100% - 150px);
+    flex-grow: 1;
     padding-left: 1rem; }
     .area-sign__box--w450 .prt-registform__td {
-    width: calc(100% - 100px); }
+    flex-grow: 1; }
 
 .prt-registcard {
   position: relative; }
@@ -2633,9 +2637,10 @@ textarea {
       margin-top: .6rem; }
   .prt-registcardinfo__th {
     width: 100px;
+    flex-shrink: 0;
     font-weight: bold; }
   .prt-registcardinfo__td {
-    width: calc(100% - 100px); }
+    flex-grow: 1; }
 
 .area-deliverconfirm {
   display: flex;
@@ -2672,9 +2677,10 @@ textarea {
       margin-top: 1rem; }
   .prt-deliverconfirmsonginfo__th {
     width: 240px;
+    flex-shrink: 0;
     font-weight: bold; }
   .prt-deliverconfirmsonginfo__td {
-    width: calc(100% - 240px); }
+    flex-grow: 1; }
 
 .prt-paymentsettingcaption {
   margin-top: 2rem;
@@ -2759,7 +2765,40 @@ textarea {
     .prt-faqtable td:nth-of-type(2) {
       text-align: center; }
 
+@media screen and (max-width: 680px) {
+  .prt-signlist__item,
+  .prt-artisteditlist__item,
+  .prt-paymenttable__item,
+  .prt-contactform__item,
+  .prt-registform__item,
+  .prt-registcardinfo__item,
+  .prt-deliverconfirmsonginfo__item {
+    display: block;
+  }
+  .prt-signlist__th,
+  .prt-artisteditlist__th,
+  .prt-paymenttable__th,
+  .prt-contactform__th,
+  .prt-registform__th,
+  .prt-registcardinfo__th,
+  .prt-deliverconfirmsonginfo___th{
+    min-height: 2em;
+  }
+}
 
-
-
+a:hover,
+button:hover {
+  opacity: .8;
+}
+.required{
+  position: relative;}
+.required::after {
+  content: "*";
+  margin-left: 5px;
+  color: #d92323;
+  display: inline-block;
+  position: absolute;
+  left: -22px;
+  top: 0px;
+  font-size: 2rem; }
 
