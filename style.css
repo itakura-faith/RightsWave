@@ -2802,3 +2802,30 @@ button:hover {
   top: 0px;
   font-size: 2rem; }
 
+.area-contentbox + .area-contentbox{
+  margin-top: 3em;
+}
+.document {
+  padding: 0 5%;
+}
+.document__item + .document__item {
+  margin-top: 2em;
+}
+.document__item .head {
+  font-weight: 600;
+  font-size: 1.3em;
+}
+.document__item .contents li {
+  padding-left: 3em;
+}
+.document__item .contents li + li{
+margin-top: 1em;
+}
+.document__item .contents li > .num {
+  margin-left: -3em;
+  font-style: normal;
+  display: inline-block;
+  width: 3em;
+  text-align: center;
+}
+
