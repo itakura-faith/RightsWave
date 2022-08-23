@@ -2806,26 +2806,43 @@ button:hover {
   margin-top: 3em;
 }
 .document {
-  padding: 0 5%;
+  padding:5%;
 }
-.document__item + .document__item {
+.document .area-contentbox__h{
+  margin-bottom: 4rem;
+
+}
+
+.document .area-contentbox__caption{
+  margin-bottom: 4rem;
+  text-align: left;
+}
+
+.document-list__item + .document-list__item {
   margin-top: 2em;
 }
-.document__item .head {
+.document-list__item .head {
   font-weight: 600;
   font-size: 1.3em;
+  margin-bottom: 1em;
 }
-.document__item .contents li {
-  padding-left: 3em;
+.document-list__item .contents li {
+  margin-top: 1em;
 }
-.document__item .contents li + li{
+.document-list__item .contents li {
+  padding-left: 2.6em;
+}
+.document-list__item .contents li + li{
 margin-top: 1em;
 }
-.document__item .contents li > .num {
-  margin-left: -3em;
+.document-list__item .contents li li + li{
+  margin-top: .5em;
+}
+.document-list__item .contents li .num {
+  margin-left: -2.6em;
   font-style: normal;
   display: inline-block;
-  width: 3em;
+  width: 2.6em;
   text-align: center;
 }
 
